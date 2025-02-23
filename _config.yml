@@ -12,7 +12,7 @@ site_theme               : "dark"
 title                    : "Ryan Verbrugge"
 title_separator          : "-"
 name                     : &name "Ryan Verbrugge"
-description              : &description "personal description"
+description              : &description "Fourth Year Robotics Major"
 url                      : https://rcverbru.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rcverbru/rcverbru.github.io"
@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Ryan Verbrugge"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  pronouns         : # example: "she/her"
+  bio              : "Fourth Year Robotics Major"
   location         : "Houghton, Michigan"
   employer         : "Michigan Technological University"
   uri              : # URL
