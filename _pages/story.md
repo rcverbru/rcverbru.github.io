@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /stpry/
 title: "story"
 author_profile: true
 redirect_from: 
