@@ -22,7 +22,7 @@ repository               : "rcverbru/rcverbru.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "headshot.JPG"
   name             : "Ryan Verbrugge"
   pronouns         : # example: "she/her"
   bio              : "Fourth Year Robotics Major"

@@ -1,9 +1,9 @@
 ---
-permalink: /stpry/
+permalink: /story/
 title: "story"
 author_profile: true
 redirect_from: 
-  - /story /
+  - /story/
   - /story.html
 ---
 
