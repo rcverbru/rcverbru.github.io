@@ -13,7 +13,8 @@ redirect_from:
 
 __Michigan Technological University__
 
-- Aug 2021 – May 2025: BS in Robotics Engineering
+- August 2021 – August 2025: BS in Robotics Engineering
+- August 2025 – May 2027: MS in Electrical and Computer Engineering
 
 ## Experience
 
