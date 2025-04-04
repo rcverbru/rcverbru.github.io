@@ -31,6 +31,34 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 
 ## Research Group - Robust Autonomous Systems Lab (RASL)
 
-| __Advisor:__ | <li>[Dr. Jeremy Bos](https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html)</li><li>[MTU Faculty Webpage](https://www.mtu.edu/ece/department/faculty/bos/)</li> |
-| -- | -- |
-| ![RASL Logo](../images/rasl_logo.png) | <li>Chaz Cornwall</li><li>Carl Greene</li><li>Ian Mattson</li><li>[Logan Schexnaydre](https://lpschexn.github.io/)</li><li>Ian Mattson</li> |
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><img src="../images/rasl_logo.png" alt="" height=351 width=314></img></td>
+      <td>
+        <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
+        <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Advisor: </b>
+        Dr. Jeremy Bos
+        <ul>
+          <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
+          <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
+        </ul>
+      </td>
+      <td>
+        <b>Current Graduate Research Students:</b>
+        <ul>
+          <li>Chaz Cornwall</li>
+          <li>Carl Greene</li>
+          <li>Ian Mattson</li>
+          <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
+          <li>Ian Mattson</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
