@@ -31,8 +31,8 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 
 ## Research Group - Robust Autonomous Systems Lab (RASL)
 
-<table>
-  <tbody>
+<table border="0">
+  <tbody border="0">
     <tr>
       <td align="center"><img src="../images/rasl_logo.png" alt="" height=351 width=314></td>
       <td>
