@@ -29,27 +29,39 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 | -- | -- | -- |
 | TBD | TBD | TBD |
 
-## Research Group - Robust Autonomous Systems Lab (RASL)
+## Research Group
 
-<table border="0">
-  <tbody border="0">
-    <tr>
-      <td align="center"><img src="../images/rasl_logo.png" alt="" height=351 width=314></td>
-      <td>
-        <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
-        <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>Advisor: </b>
-        Dr. Jeremy Bos
+<style type="text/css">
+#wrap {
+   width:100%;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:50%;
+}
+#right_col {
+   float:right;
+   width:50%;
+}
+</style>
+
+<div id="wrap">
+    <div id="left_col">
+        <img src="../images/rasl_logo.png" alt="" height=351 width=314>
+    </div>
+    <div id="right_col">
+        <h1>Robust Autonomous Systems Lab (RASL)</h1>
+        <ul>
+          <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
+          <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
+        </ul>
+        <br>
+        <b>Advisor: </b> Dr. Jeremy Bos
         <ul>
           <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
           <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
         </ul>
-      </td>
-      <td>
         <b>Current Graduate Research Students:</b>
         <ul>
           <li>Chaz Cornwall</li>
@@ -58,7 +70,5 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
           <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
           <li>Ian Mattson</li>
         </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+    </div>
+</div>
