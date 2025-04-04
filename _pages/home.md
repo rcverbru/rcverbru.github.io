@@ -35,9 +35,39 @@ Robust Autonomous Systems Lab
 
 __Advisor:__ [Dr. Jeremy Bos](https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html)\
 [MTU Faculty Webpage](https://www.mtu.edu/ece/department/faculty/bos/)
+|  |  |
+| -- | -- |
+| ![RASL Logo](../images/rasl_logo.png) | <li>Chaz Cornwall</li><li>Carl Greene</li><li>Ian Mattson</li><li>[Logan Schexnaydre](https://lpschexn.github.io/)</li><li>Ian Mattson</li> |
 
-* Chaz Cornwall
-* Carl Greene
-* Ian Mattson
-* [Logan Schexnaydre](https://lpschexn.github.io/)
-* Yiming Yang
+<table>
+  <tbody>
+    <tr>
+      <th></th>
+      <th align="center">Are</th>
+    </tr>
+    <tr>
+      <td>col 3 is</td>
+      <td align="center">right-aligned</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td align="center">centered</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td align="center">are neat</td>
+    </tr>
+    <tr>
+      <td align="center">See the list</td>
+      <td>
+        <ul>
+          <li>Chaz Cornwall</li>
+          <li>Carl Greene</li>
+          <li>Ian Mattson</li>
+          <li>[Logan Schexnaydre](https://lpschexn.github.io/)</li>
+          <li>Ian Mattson</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
