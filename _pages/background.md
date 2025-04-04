@@ -3,7 +3,6 @@ permalink: /background/
 title: "Background"
 author_profile: true
 redirect_from: 
-  - /background/
   - /background.html
 ---
 

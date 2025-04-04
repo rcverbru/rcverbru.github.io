@@ -68,7 +68,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
           <li>Carl Greene</li>
           <li>Ian Mattson</li>
           <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
-          <li>Ian Mattson</li>
+          <li>Yiming Yang</li>
         </ul>
     </div>
 </div>
