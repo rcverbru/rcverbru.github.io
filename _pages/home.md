@@ -49,13 +49,13 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 <div id="wrap">
     <div id="left_col">
         <img src="../images/rasl_logo.png" alt="" height=351 width=314>
-    </div>
-    <div id="right_col">
         <h1>Robust Autonomous Systems Lab (RASL)</h1>
         <ul>
           <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
           <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
         </ul>
+    </div>
+    <div id="right_col">
         <br>
         <b>Advisor: </b> Dr. Jeremy Bos
         <ul>
@@ -68,6 +68,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
           <li>Carl Greene</li>
           <li>Ian Mattson</li>
           <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
+          <li>Wei Weng</li>
           <li>Yiming Yang</li>
         </ul>
     </div>

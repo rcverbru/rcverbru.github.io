@@ -12,7 +12,7 @@ Hi I'm Ryan Verbrugge. I'm a fourth year Robotics major at Michigan Tech where I
 
 Although I won't go all the way back to when I was born, I thought I'd begin with at least my start in high school since that's probably the beginning of my engineering days (kind of). In the interest of keeping this section short I won't get too much into the details.
 
-As I was originally from the Detroit area, I went to the Utica Academy for International Studies which was an [IB](https://www.ibo.org/) full diploma school. Since the main idea behind IB is creating well rounded students, I had a wide range of classes including 4 years of spanish, 2 years of psychology and 3 years of physics. Although its not much to note, I also wrote my Extended Essay on the psychology behind stress and how relationships affected it. I graduated in the Spring of 2021 with my full IB Diploma and then turned towards the great north of Michigan Tech where I started in the following fall (fall 2021).
+As I was originally from the Detroit area, I went to the Utica Academy for International Studies which was an [IB](https://www.ibo.org/) full diploma school. Since the main idea behind IB is creating well rounded students, I had a wide range of classes including 4 years of spanish, 2 years of psychology and 3 years of physics. Although its not much to note, I also wrote my Extended Essay on the psychology behind stress and how peer to peer relationships affected it. I graduated in the Spring of 2021 with my full IB Diploma and then turned towards the great north of Michigan Tech where I started in the following fall (fall 2021).
 
 ## Michigan Tech
 
