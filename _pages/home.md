@@ -34,7 +34,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 <table>
   <tbody>
     <tr>
-      <td align="center"><img src="../images/rasl_logo.png" alt="" height=351 width=314></img></td>
+      <td align="center"><img src="../images/rasl_logo.png" alt="" height=351 width=314></td>
       <td>
         <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
         <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
