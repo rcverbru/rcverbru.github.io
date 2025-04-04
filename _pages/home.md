@@ -29,45 +29,8 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 | -- | -- | -- |
 | TBD | TBD | TBD |
 
-## Research Group - RASL
+## Research Group - Robust Autonomous Systems Lab (RASL)
 
-Robust Autonomous Systems Lab
-
-__Advisor:__ [Dr. Jeremy Bos](https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html)\
-[MTU Faculty Webpage](https://www.mtu.edu/ece/department/faculty/bos/)
-|  |  |
+| __Advisor:__ | <li>[Dr. Jeremy Bos](https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html)</li><li>[MTU Faculty Webpage](https://www.mtu.edu/ece/department/faculty/bos/)</li> |
 | -- | -- |
 | ![RASL Logo](../images/rasl_logo.png) | <li>Chaz Cornwall</li><li>Carl Greene</li><li>Ian Mattson</li><li>[Logan Schexnaydre](https://lpschexn.github.io/)</li><li>Ian Mattson</li> |
-
-<table>
-  <tbody>
-    <tr>
-      <th></th>
-      <th align="center">Are</th>
-    </tr>
-    <tr>
-      <td>col 3 is</td>
-      <td align="center">right-aligned</td>
-    </tr>
-    <tr>
-      <td>col 2 is</td>
-      <td align="center">centered</td>
-    </tr>
-    <tr>
-      <td>zebra stripes</td>
-      <td align="center">are neat</td>
-    </tr>
-    <tr>
-      <td align="center">See the list</td>
-      <td>
-        <ul>
-          <li>Chaz Cornwall</li>
-          <li>Carl Greene</li>
-          <li>Ian Mattson</li>
-          <li>[Logan Schexnaydre](https://lpschexn.github.io/)</li>
-          <li>Ian Mattson</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
