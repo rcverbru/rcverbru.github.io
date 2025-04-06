@@ -23,7 +23,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 
 | AutoDrive Challenge II | DNR Bat Counting | LiDAR Winter Adverse DataSet |
 | -- | -- | -- |
-| [![AutoDrive Bolt Under Northern Lights](../images/autodrive/bolt_cropped.jpg)](https://rcverbru.github.io/autodrive/) | [![Bat Cluster in Near IR](../images/bats/near_IR_cluster.png)](https://rcverbru.github.io/bats/) | [![winter](../images/snow_stuff/laptop_dark_cropped.jpg)](https://rcverbru.github.io/winter-data/) |
+| [![AutoDrive Bolt Under Northern Lights](../images/autodrive/bolt_cropped.jpg)](https://rcverbru.github.io/projects/autodrive/) | [![Bat Cluster in Near IR](../images/bats/near_IR_cluster.png)](https://rcverbru.github.io/research/bats/) | [![winter](../images/snow_stuff/laptop_dark_cropped.jpg)](https://rcverbru.github.io/research/winter-data/) |
 
 | TBD | TBD | TBD |
 | -- | -- | -- |
