@@ -71,5 +71,11 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
           <li>Wei Weng</li>
           <li>Yiming Yang</li>
         </ul>
+        <b>Graduated Students</b>
+        <ul>
+          <li><a href="https://sites.google.com/view/akhil-kurup">Akhil Kurup, Ph.D</a></li>
+          <li>Zach Jeffries, Ph.D</li>
+          <li>Casey Majhor, Ph.D</li>
+        </ul>
     </div>
 </div>
