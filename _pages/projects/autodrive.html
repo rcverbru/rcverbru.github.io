@@ -138,4 +138,81 @@ img {vertical-align: middle;}
 </script>
 
 </body>
+<body>
+    <style type="text/css">
+        #wrap {
+           width:100%;
+           margin:0 auto;
+        }
+        #left_col {
+           float:left;
+           width:50%;
+        }
+        #right_col {
+           float:right;
+           width:50%;
+        }
+        #center {
+            float:none;
+        }
+
+        .button {
+            position: relative;
+            overflow: hidden;
+            height: 3rem;
+            padding: 0 2rem;
+            border-radius: 1.5rem;
+            background: #3d3a4e;
+            background-size: 400%;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover::before {
+            transform: scaleX(1);
+        }
+
+        .button-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            width: 100%;
+            height: inherit;
+            border-radius: inherit;
+            background: linear-gradient(
+                82.3deg,
+                rgba(150, 93, 233, 1) 10.8%,
+                rgba(99, 88, 238, 1) 94.3%
+            );
+            transition: all 0.475s;
+        }
+    </style>
+
+    <div id="wrap">
+        <p>The AutoDrive II Challenge is a GM and SAE sponsored event in which universities receive a stock Chevy EUV Bolt and make it autonomous over 5 years. This challenge began in 2021 and ends in June 2026. Scored challenges progressively get harder as each year passes with topics including base-level object detection, and spanning to non-gps-based localization in an area. Teams then meet in June of each year to compete at University of Michigan's test track, M-City.</p>
+        <br>
+        <a href="https://www.autodrivechallenge.com/">Autodrive</a>
+        <button class="button">
+            <span class="button-content"></span>
+        </button>
+    </div>
+    </br>
+    <div id="wrap">
+        <div id="left_col">
+            <p>test</p>
+        </div>
+        <div id="right_col">
+            <p>test</p>
+        </div>
+    </div>
+</body>
 </html> 
