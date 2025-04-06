@@ -27,4 +27,4 @@ main:
     url: /projects/
 
   - title: "CV"
-    url: /files/cv.pdf
+    url: ../files/cv.pdf
