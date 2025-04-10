@@ -48,7 +48,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
 
 <div id="wrap">
     <div id="left_col">
-        <img src="../images/rasl_logo.png" alt="" height=351 width=314>
+        <img src="../images/rasl_logo.png" alt="RASL Logo" height=351 width=314>
         <h1>Robust Autonomous Systems Lab (RASL)</h1>
         <ul>
           <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
