@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>home.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>Hello all, I'm Ryan Verbrugge and I'm a fourth year Robotics major at Michigan Tech where I focus on perception and mapping systems for autonomous vehicles. I'm currently finishing my final semester here for my bachelor's and starting into my masters at Tech in Electrical and Computer Engineering this upcoming Fall (2025). For more information on my background you can check out my <a href="https://rcverbru.github.io/cv/">CV</a> or <a href="https://rcverbru.github.io/background/">Background</a> pages.</p>
+<p>Most of my work has been on GM and SAE's AutoDrive Challenge II but have done work within the research space on similar projects. Below are some images from each of my projects each of which link to their accompanying pages with more description of my owm work accomplishments and contributions.</p>
+<h2 id="research-interests">Research Interests</h2>
+<ul>
+<li>Perception Systems for Autonomous Vehicles</li>
+<li>Mapping and Planning Systems for Autonomous Vehicles</li>
+<li>Wildlife Conservation using Automotive Grade Sensors</li>
+<li>LiDAR Object Detection in Adverse Weather Conditions</li>
+<li>Autonomous Vehicle Simulation</li>
+</ul>
+<h2 id="projects-and-research">Projects and Research</h2>
+<table>
+<thead>
+<tr>
+<th>AutoDrive Challenge II</th>
+<th>DNR Bat Counting</th>
+<th>LiDAR Winter Adverse DataSet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://rcverbru.github.io/projects/autodrive/"><img src="../images/autodrive/bolt_cropped.jpg" alt="AutoDrive Bolt Under Northern Lights"></a></td>
+<td><a href="https://rcverbru.github.io/research/bats/"><img src="../images/bats/near_IR_cluster.png" alt="Bat Cluster in Near IR"></a></td>
+<td><a href="https://rcverbru.github.io/research/winter-data/"><img src="../images/snow_stuff/laptop_dark_cropped.jpg" alt="winter"></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>TBD</th>
+<th>TBD</th>
+<th>TBD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBD</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="research-group">Research Group</h2>
+<style type="text/css">
+#wrap {
+   width:100%;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:50%;
+}
+#right_col {
+   float:right;
+   width:50%;
+}
+</style>
+<div id="wrap">
+    <div id="left_col">
+        <img src="../images/rasl_logo.png" alt="RASL Logo" height=351 width=314>
+        <h1>Robust Autonomous Systems Lab (RASL)</h1>
+        <ul>
+          <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
+          <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
+        </ul>
+    </div>
+    <div id="right_col">
+        <br>
+        <b>Advisor: </b> Dr. Jeremy Bos
+        <ul>
+          <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
+          <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
+        </ul>
+        <b>Current Graduate Research Students:</b>
+        <ul>
+          <li>Chaz Cornwall</li>
+          <li>Carl Greene</li>
+          <li>Ian Mattson</li>
+          <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
+          <li>Nick Peterson</li>
+          <li>Wei Weng</li>
+          <li>Yiming Yang</li>
+        </ul>
+        <b>Graduated Students</b>
+        <ul>
+          <li><a href="https://sites.google.com/view/akhil-kurup">Akhil Kurup, Ph.D</a></li>
+          <li>Casey Majhor, Ph.D</li>
+          <li>Mark
+          <li>Zach Jeffries, Ph.D</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
