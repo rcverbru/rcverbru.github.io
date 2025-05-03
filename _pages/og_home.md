@@ -60,7 +60,7 @@ Most of my work has been on GM and SAE's AutoDrive Challenge II but have done wo
         <b>Advisor: </b> Dr. Jeremy Bos
         <ul>
           <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
-          <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
+          <li><a href="https://www.mtu.edu/ece/department/faculty/bos/">MTU Faculty Webpage</a></li>
         </ul>
         <b>Current Graduate Research Students:</b>
         <ul>
