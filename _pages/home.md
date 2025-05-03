@@ -1,10 +1,10 @@
 ---
-permalink: /
+permalink: /home3
 title: "Home Page"
 author_profile: true
 redirect_from: 
-  - /home/
-  - /home.html
+  - /home3/
+  - /home3.html
 ---
 
 Hello all, I'm Ryan Verbrugge and I'm a fourth year Robotics major at Michigan Tech where I focus on perception and mapping systems for autonomous vehicles. I'm currently finishing my final semester here for my bachelor's and starting into my masters at Tech in Electrical and Computer Engineering this upcoming Fall (2025). For more information on my background you can check out my [CV](https://rcverbru.github.io/cv/) or [Background](https://rcverbru.github.io/background/) pages.
