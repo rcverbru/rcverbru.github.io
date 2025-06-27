@@ -6,4 +6,3 @@ redirect_from:
   - /projects.html
 ---
 
-## The Diviner
