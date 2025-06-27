@@ -1,0 +1,74 @@
+---
+layout: archive
+title: "The Diviner"
+permalink: /projects/diviner/
+author_profile: true
+redirect_from: 
+  - /diviner
+  - /the-diviner
+  - /diviner.html
+  - /the-diviner.html
+  - /projects/diviner.html
+  - /projects/the-diviner.html
+---
+
+{% include base_path %}
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #wrap {
+       width:100%;
+       margin:0 auto;
+    }
+    #left_col {
+       float:left;
+       width:50%;
+    }
+    #right_col {
+       float:right;
+       width:50%;
+    }
+    #center {
+        float:none;
+    }
+    .content-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .image-container {
+        flex: 1;
+        max-width: 40%; /* Adjust the percentage as needed */
+        margin-right: 20px;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Optional: Add rounded corners */
+    }
+    .text-container {
+        flex: 2;
+    }
+    .text-container p {
+        margin: 0;
+        line-height: 1.6;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <p>
+            The Diviner was a lidar based localization system modeled off of <a href="https://github.com/PRBonn/kiss-icp/tree/main">KISS-ICP</a> that I wrote from scratch.
+            This system, albeit rough around the edges, worked fairly well to an extent. 
+            There were some location jumps during testing that would cause some issues but for the most part was acurate before those happened.
+            
+        </p>
+    </div>
+</body>
+</head>
+</html>
