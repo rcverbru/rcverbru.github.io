@@ -1,7 +1,6 @@
 # Authors
 
 Name Name:
-<<<<<<< HEAD
   name        : "Ryan Verbrugge"
   uri         : "https://rcverbru.github.io"
   email       : "rcverbru@mtu.edu"
@@ -11,20 +10,3 @@ Name Name:
   google_plus : 
   linkedin    : "Ryan Verbrugge"
   github      : "rcverbru"
-=======
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
->>>>>>> upstream/master

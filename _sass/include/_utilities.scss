@@ -227,6 +227,12 @@ body:hover .visually-hidden button {
     color: $foursquare-color;
   }
 
+  .fa-github,
+  .fa-github-alt,
+  .fa-github-square {
+    color: $github-color;
+  }
+
   .fa-google-plus,
   .fa-google-plus-square {
     color: $google-plus-color;
@@ -319,11 +325,9 @@ body:hover .visually-hidden button {
 
 .navicon {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
   width: $navicon-width;
   height: $navicon-height;
-  background: var(--global-masthead-link-color);
+  background: #fff;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -335,7 +339,7 @@ body:hover .visually-hidden button {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    background: var(--global-masthead-link-color);
+    background: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
