@@ -14,7 +14,7 @@ __Roles:__
 
 - Michigan Tech AutoDrive Team Captain
 - Robotics Systems Enterprise Director
-- Enterprise Assistant Director
+- Robotics Systsms Enterprise Assistant Director
 - Outreach Coordinator
 - Lab manager
 - Team Lead
@@ -31,7 +31,7 @@ __Roles:__
 
 ## Notable AutoDrive Work
 
-__[LiDAR Based Localization System](https://github.com/rcverbru/divining-rod):__
+__[LiDAR Based Localization System](https://github.com/rcverbru/projects/divining-rod):__
 
 __Timeline:__ August 2024 - Present
 
