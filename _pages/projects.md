@@ -1,9 +1,9 @@
 ---
-permalink: /projects/
-title: "Projects"
+permalink: /md_projects/
+title: "Projects - MD Version"
 author_profile: true
 redirect_from: 
-  - /projects.html
+  - /md_projects.html
 ---
 
 # Current Projects
@@ -31,5 +31,5 @@ I don't currently have anything major that I'm working on beyond this site itsel
     </table>
 </body>
 
-- [AutoDrive](https://rcverbru.github.io/projects/autodrive)
-- [The Diviner](https://rcverbru.github.io/projects/diviner)
+<!-- - [AutoDrive](https://rcverbru.github.io/projects/autodrive) -->
+<!-- - [The Diviner](https://rcverbru.github.io/projects/diviner) -->
