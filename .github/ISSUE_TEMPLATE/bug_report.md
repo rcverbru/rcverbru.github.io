@@ -23,15 +23,11 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-<<<<<<< HEAD
-**Desktop (please complete the following information):**
-=======
 **Version**
 Named version (ex., v.0.8.4) and commit hash you are using.
 
 **Browser (please complete the following information):**
  - Device: [e.g. iPhone6] (if applicable)
->>>>>>> upstream/master
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
