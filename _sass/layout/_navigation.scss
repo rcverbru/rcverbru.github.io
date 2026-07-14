@@ -196,8 +196,13 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
+<<<<<<< HEAD
     background-color: var(--global-base-color);
     color: #fff;
+=======
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
+>>>>>>> upstream/master
     cursor: pointer;
     z-index: 100;
   }

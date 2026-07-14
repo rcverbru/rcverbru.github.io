@@ -1,8 +1,9 @@
 /* ==========================================================================
-   DARK THEME
-   ========================================================================== */
+    DEFAULT THEME - DARK VERSION
+    ========================================================================== */
 
 /* Color codes used for the theme */
+$primary-color              : #0ea1c5;
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -34,8 +35,8 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
-:root {
-    --global-base-color                 : #{$background};
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
     --global-bg-color                   : #{$background};
     --global-border-color               : #{$background-light};
     --global-code-background-color      : #fafafa;
@@ -45,8 +46,9 @@ $sidebar-screen-min-width   : 1024px;
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};    
     --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};    
+    --global-masthead-link-color-hover  : #{$primary-color};
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
 }
+

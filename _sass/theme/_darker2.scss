@@ -1,6 +1,11 @@
 /* ==========================================================================
+<<<<<<< HEAD:_sass/theme/_darker2.scss
    Minimal Mistakes Dark (in-progress)
    ========================================================================== */
+=======
+    AIR THEME - DARK VERSION
+    ========================================================================== */
+>>>>>>> upstream/master:_sass/theme/_air_dark.scss
 
 /* Color codes used for the theme */
 $gray                       : #7a8288;
@@ -34,8 +39,13 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
+<<<<<<< HEAD:_sass/theme/_darker2.scss
 :root {
     --global-base-color                 : #{$background};
+=======
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+>>>>>>> upstream/master:_sass/theme/_air_dark.scss
     --global-bg-color                   : #{$background};
     --global-border-color               : #{$background-light};
     --global-code-background-color      : #fafafa;
@@ -45,7 +55,11 @@ $sidebar-screen-min-width   : 1024px;
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};    
     --global-masthead-link-color        : #{$text};
+<<<<<<< HEAD:_sass/theme/_darker2.scss
     --global-masthead-link-color-hover  : #{$background-light};    
+=======
+    --global-masthead-link-color-hover  : #{$primary-color};
+>>>>>>> upstream/master:_sass/theme/_air_dark.scss
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
