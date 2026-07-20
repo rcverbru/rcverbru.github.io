@@ -1,0 +1,45 @@
+---
+permalink: /research/bats/
+title: "Projects"
+author_profile: true
+redirect_from: 
+  - /bats
+  -
+---
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+<div id="mine-map" style="height: 500px; margin-bottom: 1.5em;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  var mineLocations = {{ site.data.mine_locations | jsonify }};
+
+  var mineMap = L.map('mine-map').setView([47.1211, -88.5464], 7);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mineMap);
+
+  var markerStyles = {
+    collected: { radius: 8, weight: 2, color: '#1e8449', fillColor: '#2ecc71', fillOpacity: 0.9 },
+    default: { radius: 8, weight: 2, color: '#1f6feb', fillColor: '#4a90e2', fillOpacity: 0.9 }
+  };
+
+  var mineBounds = [];
+  mineLocations.forEach(function (loc) {
+    var style = loc.data_collected ? markerStyles.collected : markerStyles.default;
+    var marker = L.circleMarker([loc.lat, loc.lng], style).addTo(mineMap);
+    if (loc.name || loc.description) {
+      marker.bindPopup('<strong>' + (loc.name || '') + '</strong>' + (loc.description ? '<br>' + loc.description : ''));
+    }
+    mineBounds.push([loc.lat, loc.lng]);
+  });
+
+  if (mineBounds.length > 1) {
+    mineMap.fitBounds(mineBounds, { padding: [30, 30] });
+  }
+</script>

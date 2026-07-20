@@ -36,4 +36,3 @@ Previously in that fall semester of 2022, I met a new research professor, Dr. Ta
 
 This is where I'm currently at... Things are still getting figured out as we go along but its slowly getting written.
 
-## Adventures to Try out While in Michigan's Upper Pennisula

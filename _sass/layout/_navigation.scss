@@ -205,7 +205,7 @@
   .visible-links {
     display: table;
 
-    li {
+    > li {
       display: table-cell;
       vertical-align: middle;
 
@@ -213,13 +213,13 @@
         font-weight: bold;
         text-wrap: wrap;
 
-        a {
+        > a {
           margin-left: 0;
         }
       }
 
       &:last-child {
-        a {
+        > a {
           margin-right: 0;
         }
       }
@@ -317,6 +317,71 @@
       }
     }
   }
+}
+
+
+/*
+   Masthead dropdown menus
+   ========================================================================== */
+
+.masthead__menu-item--dropdown {
+  position: relative;
+
+  > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+  }
+
+  .dropdown-caret {
+    font-size: 0.7em;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    margin: 0;
+    padding: 0.25em 0;
+    list-style: none;
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    z-index: 50;
+
+    li {
+      display: block;
+      white-space: nowrap;
+    }
+
+    a {
+      margin: 0;
+      padding: 0.5em 1.25em;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &:hover .dropdown-menu,
+  &:focus-within .dropdown-menu {
+    display: block;
+  }
+}
+
+/* When collapsed into the overflow ("...") panel, show dropdown items
+   inline as a sub-list instead of relying on hover */
+.hidden-links .masthead__menu-item--dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-top: 0.25em;
+  padding-left: 1em;
+  border: none;
+  box-shadow: none;
 }
 
 

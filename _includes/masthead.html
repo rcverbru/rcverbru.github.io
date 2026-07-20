@@ -14,9 +14,25 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-            </li>
+            {% if link.children %}
+              <li class="masthead__menu-item masthead__menu-item--dropdown {% if page.url contains link.url and link.url != '/' %}selected{% endif %} {% if page.url == link.url %}current{% endif %}">
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }} <span class="dropdown-caret" aria-hidden="true">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                  {% for child in link.children %}
+                    {% if child.url contains 'http' %}
+                      {% assign child_domain = '' %}
+                      {% else %}
+                      {% assign child_domain = base_path %}
+                    {% endif %}
+                    <li><a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %} {% if page.url == link.url %}current{% endif %}">
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endif %}
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>

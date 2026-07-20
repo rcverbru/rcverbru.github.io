@@ -1,0 +1,106 @@
+# Mine locations shown on the interactive map at /research/bats/.
+# Add or edit entries here — no template changes needed.
+# lat/lng are decimal degrees; description is optional and shows in the popup.
+# Add `data_collected: true` to a mine to render its marker green instead of blue.
+
+# Houghton County Mines
+- name: "Quincy Mine"
+  lat: 47.13639
+  lng: -88.57500
+
+- name: "Tamarack Mine"
+  lat: 47.26000
+  lng: -88.45900
+
+- name: "Osceola Mine"
+  lat: 47.22915
+  lng: -88.45914
+
+- name: "La Salle Mine"
+  lat: 	47.20861
+  lng: -88.47333
+
+- name: "Tamarack Mine"
+  lat: 47.24806
+  lng: -88.46833
+
+- name: "Laurium Mine"
+  lat: 47.21861
+  lng: -88.46194
+
+- name: "Atlantic Mine"
+  lat: 47.09972
+  lng: -88.62750
+
+- name: "Arcadian Mine"
+  lat: 47.15190
+  lng: -88.52500
+
+- name: "North Kearsarge Mine"
+  lat: 47.27250
+  lng: -88.40833
+
+- name: "Mabbs Mine"
+  lat: 47.11083
+  lng: -88.55250
+
+- name: "Champion Mine"
+  lat: 47.03917
+  lng: -88.66583
+
+- name: "Douglass Copper Mine"
+  lat: 47.13889
+  lng: -88.54083
+
+# Ontonagon County Mines
+- name: "Adventure Mine"
+  lat: 46.772628 
+  lng: -89.081780
+  description: "Data Collection Site"
+  data_collected: true
+
+- name: "Mead Mine"
+  lat: 46.816511
+  lng: -89.72742
+  description: "Data Collection Site"
+  data_collected: true
+
+- name: "Nonesuch Mine"
+  lat: 46.75530
+  lng: -89.61970
+
+- name: "Minesota Mine"
+  lat: 46.72936
+  lng: -89.17574
+
+- name: "Victoria Mine"
+  lat: 46.70270
+  lng: -89.22690
+
+- name: "Michigan Mine"
+  lat: 46.73001
+  lng: -89.15784
+
+
+# Keweenaw County Mines
+- name: "Cliff Mine"
+  lat: 47.37300
+  lng: -88.31370
+
+- name: "Copper Falls Mine"
+  lat: 47.42500
+  lng: -88.20000
+
+- name: "Delaware Mine"
+  lat: 47.42430
+  lng: -88.09870
+
+- name: "Mohawk Mine"
+  lat: 47.30810
+  lng: -88.35560
+
+- name: "Wolverine Mine"
+  lat: 47.26833
+  lng: -88.41167
+
+

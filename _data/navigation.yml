@@ -11,8 +11,16 @@ main:
   - title: "Background"
     url: /background/
 
+  - title: "Industry"
+    url: /industry/
+
   - title: "Research"
     url: /research/
+    children:
+      - title: "Bat Population Tracking"
+        url: /bats/
+      - title: "LiDAR Snow Collection"
+        url: /lidar-snow/
 
   # - title: "Publications"
   #   url: /publications/
@@ -25,6 +33,11 @@ main:
 
   - title: "Projects"
     url: /projects/
+    children:
+      - title: "AutoDrive Challenge II"
+        url: /projects/autodrive/
+      - title: "The Diviner"
+        url: /projects/diviner/
 
   - title: "CV"
     # url: https://rcverbru.github.io/files/ryan_verbrugge_cv.pdf

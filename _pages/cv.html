@@ -1,0 +1,467 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+  - /CV/
+---
+
+{% include base_path %}
+
+<div class="cv">
+  <style>
+    .cv {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .cv h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      margin: 0 0 1em;
+      padding-bottom: 0.4em;
+      font-size: 1.3em;
+      border-bottom: 2px solid var(--global-base-color);
+    }
+
+    .cv h2 i {
+      color: var(--global-base-color);
+    }
+
+    /* Header / title card */
+    .cv-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5em;
+      margin-bottom: 2.5em;
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid var(--global-border-color);
+    }
+
+    .cv-header h1 {
+      margin: 0 0 0.1em;
+      line-height: 1.1;
+    }
+
+    .cv-headline {
+      margin: 0 0 0.75em;
+      font-size: 1.15em;
+      color: var(--global-text-color-light);
+    }
+
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em 1.25em;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.95em;
+    }
+
+    .cv-contact li {
+      white-space: nowrap;
+    }
+
+    .cv-contact i {
+      margin-right: 0.4em;
+      color: var(--global-base-color);
+    }
+
+    .cv-contact a {
+      color: var(--global-text-color);
+      text-decoration: none;
+    }
+
+    .cv-contact a:hover {
+      color: var(--global-link-color);
+      text-decoration: underline;
+    }
+
+    .cv-pdf-btn {
+      flex-shrink: 0;
+    }
+
+    /* Sections */
+    .cv-section {
+      margin-bottom: 2.5em;
+    }
+
+    /* Timeline entries */
+    .cv-entry {
+      position: relative;
+      margin-bottom: 1.75em;
+      padding-left: 1.5em;
+      border-left: 2px solid var(--global-border-color);
+    }
+
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-entry::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 0.3em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--global-base-color);
+    }
+
+    .cv-entry-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5em 1em;
+      margin-bottom: 0.15em;
+    }
+
+    .cv-entry-title {
+      margin: 0;
+      font-size: 1.05em;
+    }
+
+    .cv-entry-org {
+      margin: 0 0 0.5em;
+      color: var(--global-text-color-light);
+      font-size: 0.95em;
+    }
+
+    .cv-entry-date {
+      flex-shrink: 0;
+      color: var(--global-text-color-light);
+      font-size: 0.85em;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .cv-entry ul {
+      margin: 0.5em 0 0;
+      padding-left: 1.2em;
+    }
+
+    .cv-entry ul li {
+      margin-bottom: 0.3em;
+    }
+
+    .cv-subgroup {
+      margin-top: 0.75em;
+      padding: 0.75em 1em;
+      background: var(--global-code-background-color);
+      border-radius: 6px;
+    }
+
+    .cv-subgroup h4 {
+      margin: 0 0 0.5em;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--global-code-text-color);
+    }
+
+    .cv-subgroup ul {
+      margin: 0;
+      color: var(--global-code-text-color);
+    }
+
+    /* Project card */
+    .cv-project h3 {
+      margin: 0 0 0.25em;
+    }
+
+    .cv-project-roles {
+      margin: 0 0 1em;
+      font-size: 0.9em;
+      color: var(--global-text-color-light);
+    }
+
+    .cv-project h4 {
+      margin: 1.25em 0 0.5em;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--global-text-color-light);
+    }
+
+    .cv-contribution {
+      margin-bottom: 0.75em;
+    }
+
+    .cv-contribution strong {
+      display: block;
+    }
+
+    /* Tag pills */
+    .cv-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+    }
+
+    .cv-tag {
+      padding: 0.3em 0.8em;
+      background: var(--global-code-background-color);
+      color: var(--global-code-text-color);
+      border: 1px solid var(--global-border-color);
+      border-radius: 999px;
+      font-size: 0.85em;
+      white-space: nowrap;
+    }
+
+    .cv-skill-group {
+      margin-bottom: 1em;
+    }
+
+    .cv-skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-skill-group h4 {
+      margin: 0 0 0.5em;
+      font-size: 0.9em;
+      color: var(--global-text-color-light);
+    }
+
+    @media (max-width: 600px) {
+      .cv-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      .masthead, .sidebar, .page__footer, .breadcrumbs, .cv-pdf-btn {
+        display: none !important;
+      }
+      .archive, #main {
+        max-width: 100% !important;
+      }
+      .cv-entry::before {
+        background: #000 !important;
+      }
+    }
+  </style>
+
+  <header class="cv-header">
+    <div>
+      <h1>Ryan Verbrugge</h1>
+      <p class="cv-headline">Site Autonomy Engineer &middot; Robotics Engineer</p>
+      <ul class="cv-contact">
+        <li><i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>Eden Prairie, Minnesota</li>
+        <li><a href="mailto:ryan.verbrugge@maymobility.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>ryan.verbrugge@maymobility.com</a></li>
+        <li><a href="https://www.linkedin.com/in/ryan-verbrugge"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+        <li><a href="https://github.com/rcverbru"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
+      </ul>
+    </div>
+    <a class="btn cv-pdf-btn" href="{{ base_path }}/files/ryan_verbrugge_cv.pdf"><i class="fas fa-fw fa-download" aria-hidden="true"></i>Download PDF</a>
+  </header>
+
+  <section class="cv-section">
+    <h2><i class="fas fa-fw fa-briefcase" aria-hidden="true"></i>Experience</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Site Autonomy Engineer</h3>
+        <span class="cv-entry-date">Mar 2026 &ndash; Present</span>
+      </div>
+      <p class="cv-entry-org">May Mobility &middot; Eden Prairie, MN</p>
+      <ul>
+        <li>Autonomous vehicle maintenance and upkeep</li>
+        <li>Sensor calibrations for vehicle fleet</li>
+        <li>Handled mapping updates for Eden Prairie production fleet</li>
+        <li>Extensive testing for upcoming software and hardware releases</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Research Assistant</h3>
+        <span class="cv-entry-date">Aug 2022 &ndash; Present</span>
+      </div>
+      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <ul>
+        <li>Conducted research spanning legged robotic control to perception and path planning systems in autonomous vehicles</li>
+        <li>Assisted graduate student peers on additional research topics</li>
+      </ul>
+      <div class="cv-subgroup">
+        <h4>Research Areas</h4>
+        <ul>
+          <li>8/2024 &ndash; Present: Winter Snow dataset for LiDAR systems and neural network training for vehicle detection in heavy snow environments</li>
+          <li>6/2023 &ndash; Present: Automated bat counting system for White Nose Disease population study with the DNR (see the <a href="https://www.batcon.org/a-grub-hub-for-fat-bats/">Fat Bat</a> project)</li>
+          <li>6/2023 &ndash; 9/2024: ARPA-E NextCar II, road surface analysis and data collection</li>
+          <li>1/2023 &ndash; 5/2023 (main researcher): Bipedal locomotion and gait correction on low-mu surfaces</li>
+          <li>8/2022 &ndash; 8/2023 (main researcher): Calculating fractional order calculus through the use of symmetric neural networks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Software Developer</h3>
+        <span class="cv-entry-date">Sep 2025 &ndash; Nov 2025</span>
+      </div>
+      <p class="cv-entry-org">Steelhead Technologies &middot; Calumet, MI</p>
+      <ul>
+        <li>Implemented improved UI design for web-based applications</li>
+        <li>Improved admin/user communication and interaction through back-end SQL data</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Undergraduate Class Grader &ndash; Neuromorphics</h3>
+        <span class="cv-entry-date">Mar 2025 &ndash; Apr 2025</span>
+      </div>
+      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <ul>
+        <li>Rewrote labs to provide proper content information and formatting</li>
+        <li>Assisted students in asynchronous learning labs</li>
+        <li>Graded students on assigned tasks</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Autonomous Simulations Intern</h3>
+        <span class="cv-entry-date">Jun 2024 &ndash; Aug 2024</span>
+      </div>
+      <p class="cv-entry-org">Hexagon &ndash; Manufacturing Intelligence Division &middot; Novi, MI</p>
+      <ul>
+        <li>Developed interfaces between simulation software and major autonomous vehicle software</li>
+        <li>Developed automotive simulations for autonomous vehicle testing and development</li>
+        <li>Produced documentation for customer support</li>
+        <li>Supported and assisted customer usage of simulation software</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">Undergraduate Lab Assistant &ndash; ROS</h3>
+        <span class="cv-entry-date">Sep 2023 &ndash; Dec 2023</span>
+      </div>
+      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <ul>
+        <li>Transferred labs from ROS Melodic to Noetic</li>
+        <li>Rewrote labs to provide better flow and ease of knowledge acquisition for students</li>
+        <li>Assisted students in learning and understanding beginning topics for ROS</li>
+        <li>Started creation of new lab curriculum for students in upcoming years</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">IT Operations Student &ndash; Tier 1</h3>
+        <span class="cv-entry-date">Oct 2021 &ndash; Dec 2022</span>
+      </div>
+      <p class="cv-entry-org">Michigan Technological University IT &middot; Houghton, MI</p>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3 class="cv-entry-title">BS in Robotics Engineering</h3>
+        <span class="cv-entry-date">Aug 2021 &ndash; Aug 2025</span>
+      </div>
+      <p class="cv-entry-org">Michigan Technological University</p>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2><i class="fas fa-fw fa-diagram-project" aria-hidden="true"></i>Additional Projects</h2>
+    <div class="cv-project">
+      <h3>AutoDrive Challenge II</h3>
+      <p>
+        The AutoDrive II Challenge is a GM and SAE sponsored event in which universities receive a stock Chevy
+        Bolt EUV and make it autonomous over five years (2021&ndash;2026). Scored challenges progressively get
+        harder each year, spanning base-level object detection to non-GPS-based localization. Teams meet each
+        June to compete at the University of Michigan's test track, M-City.
+      </p>
+      <p class="cv-project-roles">
+        <strong>Roles:</strong> Michigan Tech AutoDrive Team Captain, Robotics Systems Enterprise Director,
+        Enterprise Assistant Director, Outreach Coordinator, Lab Manager, Team Lead
+      </p>
+
+      <h4>Personal Contributions</h4>
+      <ul>
+        <li>Computer vision through use of a neural network and a camera</li>
+        <li>Object detection and tracking through a LiDAR sensor</li>
+        <li>Autonomous vehicle simulation for subsystem testing</li>
+        <li>Implementation of feature-level sensor fusion</li>
+        <li>Creation of vehicle behavior management system</li>
+        <li>Creation of mapping and path planning system using a standard planning algorithm</li>
+        <li>Built LiDAR-based localization system from scratch</li>
+      </ul>
+
+      <h4>Major Contributions</h4>
+      <div class="cv-contribution">
+        <strong>LiDAR Object Detection</strong>
+        In my first year on the team, and in my first year working with this system, I worked on basic Euclidean Clustering and plane-ground filtering. Both of these implementations were done through the use of PCL.
+      </div>
+      <div class="cv-contribution">
+        <strong>Vehicle Navigation, Path Planning, and Behavioral Subsystems</strong>
+        In Year 3 of the AutoDrive II Challenge, I implemented a D* Lite path planner for basic vehicle navigation through GPS-defined map infrastructure.
+      </div>
+      <div class="cv-contribution">
+        <strong>LiDAR-Based Localization System</strong>
+        (See <a href="https://github.com/rcverbru/divining-rod">github.com/rcverbru/divining-rod</a>) &mdash; In
+        Year 4, teams had to navigate an environment with intermittent GPS signal drops. I was assigned to build a
+        new localization system from scratch, adapting
+        <a href="https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/vizzo2023ral.pdf">KISS-ICP</a>, a simple
+        ICP-based localization method, into a lightweight system that could reliably determine our position and
+        navigate safely to the end goal.
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2><i class="fas fa-fw fa-code" aria-hidden="true"></i>Skills</h2>
+    <div class="cv-skill-group">
+      <h4>Languages</h4>
+      <div class="cv-tags">
+        <span class="cv-tag">C++</span>
+        <span class="cv-tag">C</span>
+        <span class="cv-tag">Python</span>
+        <span class="cv-tag">MATLAB</span>
+      </div>
+    </div>
+    <div class="cv-skill-group">
+      <h4>Software</h4>
+      <div class="cv-tags">
+        <span class="cv-tag">ROS</span>
+        <span class="cv-tag">Linux</span>
+        <span class="cv-tag">PyTorch</span>
+        <span class="cv-tag">Virtual Test Drive</span>
+        <span class="cv-tag">CARLA</span>
+        <span class="cv-tag">Unreal</span>
+        <span class="cv-tag">MATLAB DSD &amp; RoadRunner</span>
+        <span class="cv-tag">Simulink</span>
+        <span class="cv-tag">Inventor</span>
+        <span class="cv-tag">NX</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2><i class="fas fa-fw fa-lightbulb" aria-hidden="true"></i>Topics of Interest</h2>
+    <div class="cv-tags">
+      <span class="cv-tag">Perception</span>
+      <span class="cv-tag">Mapping &amp; Planning</span>
+      <span class="cv-tag">SLAM</span>
+      <span class="cv-tag">Simulation</span>
+      <span class="cv-tag">Autonomous Vehicles</span>
+      <span class="cv-tag">LiDAR</span>
+      <span class="cv-tag">Camera Vision</span>
+      <span class="cv-tag">Artificial Intelligence</span>
+    </div>
+  </section>
+</div>
