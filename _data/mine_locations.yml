@@ -52,6 +52,30 @@
   lat: 47.13889
   lng: -88.54083
 
+- name: "Unnamed Mine"
+  lat: 47.18750
+  lng: -88.65972
+
+- name: "Isle Royale Mine"
+  lat: 47.09740
+  lng: -88.58015
+
+- name: "Portage Mine"
+  lat: 47.11556
+  lng: -88.56722
+
+- name: "Trimountain Mine"
+  lat: 47.05528
+  lng: -88.65361
+
+- name: "Baltic Mine"
+  lat: 47.06861
+  lng: -88.62222
+
+- name: "Superior Mine"
+  lat: 47.07722
+  lng: -88.60139
+
 # Ontonagon County Mines
 - name: "Adventure Mine"
   lat: 46.772628 
@@ -81,6 +105,17 @@
   lat: 46.73001
   lng: -89.15784
 
+- name: "White Pine Mine"
+  lat: 46.75000
+  lng: -89.55000
+
+- name: "Rockland Mine"
+  lat: 46.73304
+  lng: -89.16479
+
+- name: "National Mine"
+  lat: 46.72856
+  lng: -89.17938
 
 # Keweenaw County Mines
 - name: "Cliff Mine"
@@ -103,4 +138,91 @@
   lat: 47.26833
   lng: -88.41167
 
+- name: "Ahmeek Mine"
+  lat: 47.29639
+  lng: -88.38417
+
+- name: "Kingston Mine"
+  lat: 47.29056
+  lng: -88.39167
+
+- name: "Allouez Mine"
+  lat: 47.28861
+  lng: -88.41306
+
+- name: "Mendota Mine"
+  lat: 47.39167
+  lng: -88.01306
+
+- name: "Seneca Mine"
+  lat: 47.31417
+  lng: -88.36167
+
+- name: "Ojibway Mine"
+  lat: 47.33861
+  lng: -88.31500
+
+- name: "North American Mine"
+  lat: 47.36833
+  lng: -88.32167
+
+- name: "Agate Harbor Mine"
+  lat: 47.44083
+  lng: -88.04806
+
+- name: "Agency Mine"
+  lat: 47.43389
+  lng: -88.14417
+
+- name: "Connecticut Mine"
+  lat: 47.42278
+  lng: -88.11000
+
+- name: "Amygdaloid Mine"
+  lat: 47.42250
+  lng: -88.11167
+
+- name: "Phoenix Mine"
+  lat: 47.39083
+  lng: -88.27917
+
+- name: "Meadow Mine"
+  lat: 47.41167
+  lng: -88.26083
+
+- name: "Humboldt Mine"
+  lat: 47.41556
+  lng: -88.25250
+
+- name: "Central Mine"
+  lat: 47.40833
+  lng: -88.19861
+
+- name: "Central Exploration Mine"
+  lat: 47.39889
+  lng: -88.17750
+
+- name: "Dana Mine"
+  lat: 47.40861
+  lng: -88.18278
+
+- name: "Madison Mine"
+  lat: 47.41361
+  lng: -88.17028
+
+- name: "Northwestern Mine"
+  lat: 47.40889
+  lng: -88.19139
+
+- name: "Star Mine"
+  lat: 47.43778
+  lng: -87.86167
+
+- name: "Manganese Mine"
+  lat: 47.45491
+  lng: -87.86503
+
+- name: "Washington Mine"
+  lat: 47.44139
+  lng: -88.00056
 

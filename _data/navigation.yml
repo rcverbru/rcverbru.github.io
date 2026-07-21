@@ -18,9 +18,9 @@ main:
     url: /research/
     children:
       - title: "Bat Population Tracking"
-        url: /bats/
+        url: /research/bats/
       - title: "LiDAR Snow Collection"
-        url: /lidar-snow/
+        url: /research/lidar-snow/
 
   # - title: "Publications"
   #   url: /publications/
