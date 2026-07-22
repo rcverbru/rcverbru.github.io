@@ -1,9 +1,8 @@
 ---
-permalink: /background/
-title: "Background"
+permalink: /md_background/
+title: "Background - MD Version"
 author_profile: true
-redirect_from: 
-  - /background.html
+sitemap: false
 ---
 
 Hi I'm Ryan Verbrugge. I'm a Robotics Engineer where I focus on perception and mapping systems for autonomous vehicles. I've worked in various research labs over the past few years, starting off in [Dr. Tan Chen](https://chentan.github.io/)'s Robotic Locomotion and Applied Control (RoLAC), then moving to my most recent location in Dr. Jeremy Bos's Robust Autonomous Systems Lab (RASL). I still have some work with that lab as of the time I'm writting this with the Bat Project but since graduation I've stepped away from the other projects.

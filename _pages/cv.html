@@ -10,169 +10,9 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="cv">
+<div class="profile-page cv">
   <style>
-    .cv {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .cv h2 {
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      margin: 0 0 1em;
-      padding-bottom: 0.4em;
-      font-size: 1.3em;
-      border-bottom: 2px solid var(--global-base-color);
-    }
-
-    .cv h2 i {
-      color: var(--global-base-color);
-    }
-
-    /* Header / title card */
-    .cv-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5em;
-      margin-bottom: 2.5em;
-      padding-bottom: 1.5em;
-      border-bottom: 1px solid var(--global-border-color);
-    }
-
-    .cv-header h1 {
-      margin: 0 0 0.1em;
-      line-height: 1.1;
-    }
-
-    .cv-headline {
-      margin: 0 0 0.75em;
-      font-size: 1.15em;
-      color: var(--global-text-color-light);
-    }
-
-    .cv-contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em 1.25em;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0.95em;
-    }
-
-    .cv-contact li {
-      white-space: nowrap;
-    }
-
-    .cv-contact i {
-      margin-right: 0.4em;
-      color: var(--global-base-color);
-    }
-
-    .cv-contact a {
-      color: var(--global-text-color);
-      text-decoration: none;
-    }
-
-    .cv-contact a:hover {
-      color: var(--global-link-color);
-      text-decoration: underline;
-    }
-
-    .cv-pdf-btn {
-      flex-shrink: 0;
-    }
-
-    /* Sections */
-    .cv-section {
-      margin-bottom: 2.5em;
-    }
-
-    /* Timeline entries */
-    .cv-entry {
-      position: relative;
-      margin-bottom: 1.75em;
-      padding-left: 1.5em;
-      border-left: 2px solid var(--global-border-color);
-    }
-
-    .cv-entry:last-child {
-      margin-bottom: 0;
-    }
-
-    .cv-entry::before {
-      content: "";
-      position: absolute;
-      left: -6px;
-      top: 0.3em;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--global-base-color);
-    }
-
-    .cv-entry-head {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 0.5em 1em;
-      margin-bottom: 0.15em;
-    }
-
-    .cv-entry-title {
-      margin: 0;
-      font-size: 1.05em;
-    }
-
-    .cv-entry-org {
-      margin: 0 0 0.5em;
-      color: var(--global-text-color-light);
-      font-size: 0.95em;
-    }
-
-    .cv-entry-date {
-      flex-shrink: 0;
-      color: var(--global-text-color-light);
-      font-size: 0.85em;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-
-    .cv-entry ul {
-      margin: 0.5em 0 0;
-      padding-left: 1.2em;
-    }
-
-    .cv-entry ul li {
-      margin-bottom: 0.3em;
-    }
-
-    .cv-subgroup {
-      margin-top: 0.75em;
-      padding: 0.75em 1em;
-      background: var(--global-code-background-color);
-      border-radius: 6px;
-    }
-
-    .cv-subgroup h4 {
-      margin: 0 0 0.5em;
-      font-size: 0.85em;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--global-code-text-color);
-    }
-
-    .cv-subgroup ul {
-      margin: 0;
-      color: var(--global-code-text-color);
-    }
-
-    /* Project card */
+    /* Page-specific overrides not worth generalizing to the shared partial */
     .cv-project h3 {
       margin: 0 0 0.25em;
     }
@@ -199,23 +39,6 @@ redirect_from:
       display: block;
     }
 
-    /* Tag pills */
-    .cv-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em;
-    }
-
-    .cv-tag {
-      padding: 0.3em 0.8em;
-      background: var(--global-code-background-color);
-      color: var(--global-code-text-color);
-      border: 1px solid var(--global-border-color);
-      border-radius: 999px;
-      font-size: 0.85em;
-      white-space: nowrap;
-    }
-
     .cv-skill-group {
       margin-bottom: 1em;
     }
@@ -229,50 +52,31 @@ redirect_from:
       font-size: 0.9em;
       color: var(--global-text-color-light);
     }
-
-    @media (max-width: 600px) {
-      .cv-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-
-    @media print {
-      .masthead, .sidebar, .page__footer, .breadcrumbs, .cv-pdf-btn {
-        display: none !important;
-      }
-      .archive, #main {
-        max-width: 100% !important;
-      }
-      .cv-entry::before {
-        background: #000 !important;
-      }
-    }
   </style>
 
-  <header class="cv-header">
+  <header class="profile-header">
     <div>
       <h1>Ryan Verbrugge</h1>
-      <p class="cv-headline">Site Autonomy Engineer &middot; Robotics Engineer</p>
-      <ul class="cv-contact">
+      <p class="profile-tagline">Site Autonomy Engineer &middot; Robotics Engineer</p>
+      <ul class="profile-contact">
         <li><i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>Eden Prairie, Minnesota</li>
         <li><a href="mailto:ryan.verbrugge@maymobility.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>ryan.verbrugge@maymobility.com</a></li>
         <li><a href="https://www.linkedin.com/in/ryan-verbrugge"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
         <li><a href="https://github.com/rcverbru"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
       </ul>
     </div>
-    <a class="btn cv-pdf-btn" href="{{ base_path }}/files/ryan_verbrugge_cv.pdf"><i class="fas fa-fw fa-download" aria-hidden="true"></i>Download PDF</a>
+    <a class="btn profile-cta" href="{{ base_path }}/files/ryan_verbrugge_cv.pdf"><i class="fas fa-fw fa-download" aria-hidden="true"></i>Download PDF</a>
   </header>
 
-  <section class="cv-section">
+  <section class="content-section">
     <h2><i class="fas fa-fw fa-briefcase" aria-hidden="true"></i>Experience</h2>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Site Autonomy Engineer</h3>
-        <span class="cv-entry-date">Mar 2026 &ndash; Present</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Site Autonomy Engineer</h3>
+        <span class="timeline-entry-date">Mar 2026 &ndash; Present</span>
       </div>
-      <p class="cv-entry-org">May Mobility &middot; Eden Prairie, MN</p>
+      <p class="timeline-entry-org">May Mobility &middot; Eden Prairie, MN</p>
       <ul>
         <li>Autonomous vehicle maintenance and upkeep</li>
         <li>Sensor calibrations for vehicle fleet</li>
@@ -281,17 +85,17 @@ redirect_from:
       </ul>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Research Assistant</h3>
-        <span class="cv-entry-date">Aug 2022 &ndash; Present</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Research Assistant</h3>
+        <span class="timeline-entry-date">Aug 2022 &ndash; Present</span>
       </div>
-      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <p class="timeline-entry-org">Michigan Technological University &middot; Houghton, MI</p>
       <ul>
         <li>Conducted research spanning legged robotic control to perception and path planning systems in autonomous vehicles</li>
         <li>Assisted graduate student peers on additional research topics</li>
       </ul>
-      <div class="cv-subgroup">
+      <div class="subgroup">
         <h4>Research Areas</h4>
         <ul>
           <li>8/2024 &ndash; Present: Winter Snow dataset for LiDAR systems and neural network training for vehicle detection in heavy snow environments</li>
@@ -303,24 +107,24 @@ redirect_from:
       </div>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Software Developer</h3>
-        <span class="cv-entry-date">Sep 2025 &ndash; Nov 2025</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Software Developer</h3>
+        <span class="timeline-entry-date">Sep 2025 &ndash; Nov 2025</span>
       </div>
-      <p class="cv-entry-org">Steelhead Technologies &middot; Calumet, MI</p>
+      <p class="timeline-entry-org">Steelhead Technologies &middot; Calumet, MI</p>
       <ul>
         <li>Implemented improved UI design for web-based applications</li>
         <li>Improved admin/user communication and interaction through back-end SQL data</li>
       </ul>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Undergraduate Class Grader &ndash; Neuromorphics</h3>
-        <span class="cv-entry-date">Mar 2025 &ndash; Apr 2025</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Undergraduate Class Grader &ndash; Neuromorphics</h3>
+        <span class="timeline-entry-date">Mar 2025 &ndash; Apr 2025</span>
       </div>
-      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <p class="timeline-entry-org">Michigan Technological University &middot; Houghton, MI</p>
       <ul>
         <li>Rewrote labs to provide proper content information and formatting</li>
         <li>Assisted students in asynchronous learning labs</li>
@@ -328,12 +132,12 @@ redirect_from:
       </ul>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Autonomous Simulations Intern</h3>
-        <span class="cv-entry-date">Jun 2024 &ndash; Aug 2024</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Autonomous Simulations Intern</h3>
+        <span class="timeline-entry-date">Jun 2024 &ndash; Aug 2024</span>
       </div>
-      <p class="cv-entry-org">Hexagon &ndash; Manufacturing Intelligence Division &middot; Novi, MI</p>
+      <p class="timeline-entry-org">Hexagon &ndash; Manufacturing Intelligence Division &middot; Novi, MI</p>
       <ul>
         <li>Developed interfaces between simulation software and major autonomous vehicle software</li>
         <li>Developed automotive simulations for autonomous vehicle testing and development</li>
@@ -342,12 +146,12 @@ redirect_from:
       </ul>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">Undergraduate Lab Assistant &ndash; ROS</h3>
-        <span class="cv-entry-date">Sep 2023 &ndash; Dec 2023</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">Undergraduate Lab Assistant &ndash; ROS</h3>
+        <span class="timeline-entry-date">Sep 2023 &ndash; Dec 2023</span>
       </div>
-      <p class="cv-entry-org">Michigan Technological University &middot; Houghton, MI</p>
+      <p class="timeline-entry-org">Michigan Technological University &middot; Houghton, MI</p>
       <ul>
         <li>Transferred labs from ROS Melodic to Noetic</li>
         <li>Rewrote labs to provide better flow and ease of knowledge acquisition for students</li>
@@ -356,27 +160,27 @@ redirect_from:
       </ul>
     </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">IT Operations Student &ndash; Tier 1</h3>
-        <span class="cv-entry-date">Oct 2021 &ndash; Dec 2022</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">IT Operations Student &ndash; Tier 1</h3>
+        <span class="timeline-entry-date">Oct 2021 &ndash; Dec 2022</span>
       </div>
-      <p class="cv-entry-org">Michigan Technological University IT &middot; Houghton, MI</p>
+      <p class="timeline-entry-org">Michigan Technological University IT &middot; Houghton, MI</p>
     </div>
   </section>
 
-  <section class="cv-section">
+  <section class="content-section">
     <h2><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>Education</h2>
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3 class="cv-entry-title">BS in Robotics Engineering</h3>
-        <span class="cv-entry-date">Aug 2021 &ndash; Aug 2025</span>
+    <div class="timeline-entry">
+      <div class="timeline-entry-head">
+        <h3 class="timeline-entry-title">BS in Robotics Engineering</h3>
+        <span class="timeline-entry-date">Aug 2021 &ndash; Aug 2025</span>
       </div>
-      <p class="cv-entry-org">Michigan Technological University</p>
+      <p class="timeline-entry-org">Michigan Technological University</p>
     </div>
   </section>
 
-  <section class="cv-section">
+  <section class="content-section">
     <h2><i class="fas fa-fw fa-diagram-project" aria-hidden="true"></i>Additional Projects</h2>
     <div class="cv-project">
       <h3>AutoDrive Challenge II</h3>
@@ -423,45 +227,45 @@ redirect_from:
     </div>
   </section>
 
-  <section class="cv-section">
+  <section class="content-section">
     <h2><i class="fas fa-fw fa-code" aria-hidden="true"></i>Skills</h2>
     <div class="cv-skill-group">
       <h4>Languages</h4>
-      <div class="cv-tags">
-        <span class="cv-tag">C++</span>
-        <span class="cv-tag">C</span>
-        <span class="cv-tag">Python</span>
-        <span class="cv-tag">MATLAB</span>
+      <div class="tag-list">
+        <span class="tag">C++</span>
+        <span class="tag">C</span>
+        <span class="tag">Python</span>
+        <span class="tag">MATLAB</span>
       </div>
     </div>
     <div class="cv-skill-group">
       <h4>Software</h4>
-      <div class="cv-tags">
-        <span class="cv-tag">ROS</span>
-        <span class="cv-tag">Linux</span>
-        <span class="cv-tag">PyTorch</span>
-        <span class="cv-tag">Virtual Test Drive</span>
-        <span class="cv-tag">CARLA</span>
-        <span class="cv-tag">Unreal</span>
-        <span class="cv-tag">MATLAB DSD &amp; RoadRunner</span>
-        <span class="cv-tag">Simulink</span>
-        <span class="cv-tag">Inventor</span>
-        <span class="cv-tag">NX</span>
+      <div class="tag-list">
+        <span class="tag">ROS</span>
+        <span class="tag">Linux</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Virtual Test Drive</span>
+        <span class="tag">CARLA</span>
+        <span class="tag">Unreal</span>
+        <span class="tag">MATLAB DSD &amp; RoadRunner</span>
+        <span class="tag">Simulink</span>
+        <span class="tag">Inventor</span>
+        <span class="tag">NX</span>
       </div>
     </div>
   </section>
 
-  <section class="cv-section">
+  <section class="content-section">
     <h2><i class="fas fa-fw fa-lightbulb" aria-hidden="true"></i>Topics of Interest</h2>
-    <div class="cv-tags">
-      <span class="cv-tag">Perception</span>
-      <span class="cv-tag">Mapping &amp; Planning</span>
-      <span class="cv-tag">SLAM</span>
-      <span class="cv-tag">Simulation</span>
-      <span class="cv-tag">Autonomous Vehicles</span>
-      <span class="cv-tag">LiDAR</span>
-      <span class="cv-tag">Camera Vision</span>
-      <span class="cv-tag">Artificial Intelligence</span>
+    <div class="tag-list">
+      <span class="tag">Perception</span>
+      <span class="tag">Mapping &amp; Planning</span>
+      <span class="tag">SLAM</span>
+      <span class="tag">Simulation</span>
+      <span class="tag">Autonomous Vehicles</span>
+      <span class="tag">LiDAR</span>
+      <span class="tag">Camera Vision</span>
+      <span class="tag">Artificial Intelligence</span>
     </div>
   </section>
 </div>

@@ -1,128 +1,113 @@
 ---
+layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
-redirect_from: 
+redirect_from:
   - /research.html
 ---
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <style type="text/css">
-        #wrap {
-            width: 100%;
-            margin: 0 auto;
-        }
-        #left_col {
-            float: left;
-            width: 50%;
-        }
-        #right_col {
-            float: right;
-            width: 50%;
-        }
-    </style>
-    <style>
-        table img {
-            max-width: 100%;
-            height: auto;
-        }
-        table td {
-            width: 33%;
-            text-align: center;
-        }
-        table th {
-            background-color: transparent;
-            color:black;
-        }
-    </style>
-</head>
-<body>
-    <h2>Primary Research Areas</h2>
-    <ul>
-      <li> Localization in adverse weather
-      <li> Species detection and classification for bat habitat conservation
-      <li> Lidar benchmarkingand data collection in adverse winter weather
-      <li> ARPA-E NextCar II, road surface analysis and data collection
-      <li> Winter Snow dataset for LiDAR systems and neural network training for vehicle detection in heavy snow environments
-    </ul>
-</body>
-<body>
-    <h1 id="research-group">Research Group</h1>
-    <div id="wrap">
-        <div id="left_col">
-            <img src="../images/rasl_logo.png" alt="RASL Logo" height=351 width=314>
-            <h2>Robust Autonomous Systems Lab (RASL)</h2>
-            <ul>
-                <li><a href="https://bitbucket.org/autonomymtu/workspace/repositories/">MTU Autonomy Bitbucket</a></li>
-                <li><a href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos">Lab Research Gate</a></li>
-            </ul>
+{% include base_path %}
+
+<div class="profile-page">
+  <style>
+    /* Page-specific layout not worth generalizing to the shared partial */
+    .rasl-columns {
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    .rasl-info {
+      flex: 1 1 240px;
+    }
+
+    .rasl-students {
+      flex: 1 1 240px;
+    }
+
+    .rasl-students p {
+      margin-bottom: 0.25em;
+    }
+
+    /* Tags nested inside a .subgroup would otherwise match its background exactly */
+    .subgroup .tag {
+      background: var(--global-bg-color);
+    }
+
+    .icon-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5em;
+      margin-bottom: 1em;
+    }
+  </style>
+
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-users" aria-hidden="true"></i>Research Groups</h2>
+
+    <div class="subgroup">
+      <h3>Robust Autonomous Systems Lab (RASL)</h3>
+      <div class="rasl-columns">
+        <div class="rasl-info">
+          <img src="{{ base_path }}/images/rasl_logo.png" alt="RASL Logo" style="display: block; max-width: 200px; height: auto; margin: 0 auto 1em;">
+          <div class="icon-links">
+            <a class="btn" href="https://bitbucket.org/autonomymtu/workspace/repositories/"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i>Bitbucket</a>
+            <a class="btn" href="https://github.com/Robust-Autonomous-Systems-Laboratory"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
+            <a class="btn" href="https://www.researchgate.net/lab/Robust-Autonomous-Systems-Lab-Jeremy-Patrick-Bos"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i>ResearchGate</a>
+          </div>
+          <p><strong>Advisor:</strong> Dr. Jeremy Bos</p>
+          <ul>
+            <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
+            <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
+          </ul>
         </div>
-        <div id="right_col">
-            <br>
-            <b>Advisor: </b> Dr. Jeremy Bos
-            <ul>
-                <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">Personal Website</a></li>
-                <li><a href="https://pages.mtu.edu/~jpbos/Jeremys_Homepage/Home.html">MTU Faculty Webpage</a></li>
-            </ul>
-            <b>Current Graduate Research Students:</b>
-            <ul>
-                <li>Carl Greene</li>
-                <li>Chaz Cornwall</li>
-                <li><a href="https://iqmattso.github.io/">Ian Mattson</a></li>
-                <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
-                <li>Nick Peterson</li>
-                <li><a href="https://yimingyang-mtu.github.io/">Yiming Yang</a></li>
-            </ul>
-            <b>Graduated Students</b>
-            <ul>
-                <li><a href="https://sites.google.com/view/akhil-kurup">Akhil Kurup, Ph.D</a></li>
-                <li>Casey Majhor, Ph.D</li>
-                <li>Mark Schmelzle</li>
-                <li>Wei Weng</li>
-                <li>Zach Jeffries, Ph.D</li>
-            </ul>
+        <div class="rasl-students">
+          <p><strong>Current Graduate Research Students:</strong></p>
+          <ul>
+            <li>Carl Greene</li>
+            <li><a href="https://iqmattso.github.io/">Ian Mattson</a></li>
+            <li>Nick Peterson</li>
+          </ul>
+          <p><strong>Graduated Students:</strong></p>
+          <ul>
+            <li><a href="https://sites.google.com/view/akhil-kurup">Akhil Kurup, Ph.D</a></li>
+            <li>Casey Majhor, Ph.D</li>
+            <li>Chaz Cornwall</li>
+            <li><a href="https://lpschexn.github.io/">Logan Schexnaydre</a></li>
+            <li>Mark Schmelzle</li>
+            <li>Wei Weng</li>
+            <li><a href="https://yimingyang-mtu.github.io/">Yiming Yang</a></li>
+            <li>Zach Jeffries, Ph.D</li>
+          </ul>
         </div>
+      </div>
+      <h4>Research Areas</h4>
+      <div class="tag-list">
+        <span class="tag">Localization in Adverse Weather</span>
+        <span class="tag">Species Detection &amp; Classification for Bat Habitat Conservation</span>
+        <span class="tag">LiDAR Benchmarking in Adverse Winter Weather</span>
+        <span class="tag">ARPA-E NextCar II &ndash; Road Surface Analysis &amp; Data Collection</span>
+        <span class="tag">Winter Snow Dataset for LiDAR Vehicle Detection</span>
+      </div>
     </div>
-</body>
-<br>
-<body>
-    <h2>Research Projects</h2>
-    <ul>
-      <li> Localization in adverse weather
-      <li> Species detection and classification for bat habitat conservation
-      <li> Lidar benchmarkingand data collection in adverse winter weather
-      <li> ARPA-E NextCar II, road surface analysis and data collection
-      <li> Winter Snow dataset for LiDAR systems and neural network training for vehicle detection in heavy snow environments
-    </ul>
-</body>
-<br>
-<body>
-    <div id="wrap">
-        <div id="left_col">
-            <h2>Robotics, Locomotion, and Applied Control (ROLAC) Lab</h2>
-            <ul>
-                <li><a href="https://chentan.github.io/about-group.html">RoLAC Research Group Page</a></li>
-            </ul>
-        </div>
-        <div id="right_col">
-            <br>
-            <b> Advisor: </b> Dr. Tan Chen
-            <ul>
-                <li><a href="https://chentan.github.io/">Personal Website</a></li>
-                <li><a href="https://www.mtu.edu/ece/department/faculty/chen-t/">MTU Faculty Webpage</a></li>
-            </ul>
-        </div>
+
+    <div class="subgroup">
+      <h3>Robotics, Locomotion, and Applied Control (RoLAC) Lab</h3>
+      <ul>
+        <li><a href="https://chentan.github.io/about-group.html">RoLAC Research Group Page</a></li>
+      </ul>
+      <p><strong>Advisor:</strong> Dr. Tan Chen</p>
+      <ul>
+        <li><a href="https://chentan.github.io/">Personal Website</a></li>
+        <li><a href="https://www.mtu.edu/ece/department/faculty/chen-t/">MTU Faculty Webpage</a></li>
+      </ul>
+      <h4>Research Areas</h4>
+      <div class="tag-list">
+        <span class="tag">Bipedal Locomotion &amp; Gait Correction on Low-Mu Surfaces</span>
+        <span class="tag">Fractional Order Calculus via Symmetric Neural Networks</span>
+      </div>
     </div>
-</body>
-<br>
-<body>
-    <h2>Research Projects</h2>
-    <ul>
-      <li> Localization in adverse weather
-      <li> Species detection and classification for bat habitat conservation
-      <li> Lidar benchmarkingand data collection in adverse winter weather
-      <li> ARPA-E NextCar II, road surface analysis and data collection
-      <li> Winter Snow dataset for LiDAR systems and neural network training for vehicle detection in heavy snow environments
-    </ul>
-</body>
+  </section>
+</div>

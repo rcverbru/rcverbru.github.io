@@ -1,9 +1,8 @@
 ---
 permalink: /md_research/
-title: "MD Research"
+title: "Research - MD Version"
 author_profile: true
-redirect_from: 
-  - /md_research.html
+sitemap: false
 ---
 
 ## Primary Research Areas
