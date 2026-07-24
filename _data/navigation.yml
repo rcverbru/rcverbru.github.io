@@ -8,11 +8,11 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Background"
-    url: /background/
-
   - title: "Industry"
     url: /industry/
+    children:
+      - title: "May Mobility"
+        url: /industry/may-mobility/
 
   - title: "Research"
     url: /research/
@@ -42,3 +42,7 @@ main:
   - title: "CV"
     # url: https://rcverbru.github.io/files/ryan_verbrugge_cv.pdf
     url: /cv/
+
+  - title: "About Me"
+    url: /background/
+

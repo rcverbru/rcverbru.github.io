@@ -3,399 +3,302 @@ layout: archive
 title: "AutoDrive Challenge II"
 permalink: /projects/autodrive/
 author_profile: true
-redirect_from: 
+redirect_from:
   - /autodrive
   - /autodrive.html
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-<style type="text/css">
-    #wrap {
-       width:100%;
-       margin:0 auto;
+<div class="profile-page">
+  <style>
+    /* Page-specific layout not worth generalizing to the shared partial */
+    .slideshow-container {
+      max-width: 900px;
+      position: relative;
+      margin: 0 auto 0.5em;
     }
-    #left_col {
-       float:left;
-       width:50%;
+
+    .mySlides {
+      display: none;
     }
-    #right_col {
-       float:right;
-       width:50%;
+
+    .mySlides img {
+      width: 100%;
+      border-radius: 8px;
+      vertical-align: middle;
     }
-    #center {
-        float:none;
+
+    .slide-caption {
+      color: #f2f2f2;
+      font-size: 0.9em;
+      padding: 0.5em 0.75em;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 0 0 8px 8px;
     }
-    .content-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
+
+    .slide-number {
+      color: #f2f2f2;
+      font-size: 0.8em;
+      padding: 0.5em 0.75em;
+      position: absolute;
+      top: 0;
     }
-    .image-container {
-        flex: 1;
-        max-width: 40%; /* Adjust the percentage as needed */
-        margin-right: 20px;
+
+    .slide-dots {
+      text-align: center;
+      margin-bottom: 1.5em;
     }
-    .image-container img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px; /* Optional: Add rounded corners */
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 3px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
     }
-    .text-container {
-        flex: 2;
+
+    .dot.active {
+      background-color: #717171;
     }
-    .text-container p {
-        margin: 0;
-        line-height: 1.6;
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
     }
-</style>
-<style type="text/css">
+
+    @keyframes fade {
+      from { opacity: .4; }
+      to { opacity: 1; }
+    }
+
+    /* Original button styling/colors kept as-is */
+    .autodrive-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+      margin: 1em 0;
+    }
+
+    .button,
+    .rsebutton {
+      position: relative;
+      overflow: hidden;
+      height: 3rem;
+      padding: 0 2rem;
+      border-radius: 1.5rem;
+      background-size: 400%;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1.1rem;
+    }
+
     .button {
-        position: relative;
-        overflow: hidden;
-        height: 3rem;
-        padding: 0 2rem;
-        border-radius: 1.5rem;
-        background: #027bccc9;
-        background-size: 400%;
-        color: #000000;
-        border: none;
-        cursor: pointer;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1.1rem;
+      background: #027bccc9;
     }
 
-    .button:hover::before {
-        transform: scaleX(1);
+    .rsebutton {
+      background: #ff0000c9;
     }
 
-    .button-content {
-        position: relative;
-        z-index: 1;
+    .button::before,
+    .rsebutton::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      width: 100%;
+      height: inherit;
+      border-radius: inherit;
+      transition: all 0.475s;
     }
 
     .button::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-        width: 100%;
-        height: inherit;
-        border-radius: inherit;
-        background: linear-gradient(
-            82.3deg,
-            rgb(202, 234, 255) 10.8%,
-            rgba(0, 152, 254, 1) 94.3%
-        );
-        transition: all 0.475s;
-    }
-    .rsebutton {
-        position: relative;
-        overflow: hidden;
-        height: 3rem;
-        padding: 0 2rem;
-        border-radius: 1.5rem;
-        background: #ff0000c9;
-        background-size: 400%;
-        color: #000000;
-        border: none;
-        cursor: pointer;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1.1rem;
-    }
-
-    .rsebutton:hover::before {
-        transform: scaleX(1);
-    }
-
-    .rsebutton-content {
-        position: relative;
-        z-index: 1;
+      background: linear-gradient(82.3deg, rgb(202, 234, 255) 10.8%, rgba(0, 152, 254, 1) 94.3%);
     }
 
     .rsebutton::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-        width: 100%;
-        height: inherit;
-        border-radius: inherit;
-        background: linear-gradient(
-            82.3deg,
-            rgb(255, 165, 0) 10.8%,
-            rgb(255, 255, 0) 94.3%
-        );
-        transition: all 0.475s;
+      background: linear-gradient(82.3deg, rgb(255, 165, 0) 10.8%, rgb(255, 255, 0) 94.3%);
     }
-</style>
-</head>
-<body>
 
+    .button:hover::before,
+    .rsebutton:hover::before {
+      transform: scaleX(1);
+    }
 
-<div class="slideshow-container">
+    .button-content {
+      position: relative;
+      z-index: 1;
+    }
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="../../images/autodrive/bolt_northern_lights.JPG" style="width:100%">
-    <div class="text">Bolt Under the Northern Lights</div>
-  </div>
+    .autodrive-row {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      margin-top: 0.5em;
+    }
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="../../images/autodrive/may_testing.JPG" style="width:100%">
-    <div class="text">Vehicle Testing During the Month Before Competition</div>
-  </div>
+    .autodrive-images {
+      flex: 1 1 240px;
+      max-width: 320px;
+    }
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="../../images/autodrive/bolt_fast.jpg" style="width:100%">
-    <div class="text">Vehicle GNSS Calibration at Year 3 Competition</div>
-  </div>
+    .autodrive-images img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.75em;
+    }
 
-</div>
-<br>
+    .autodrive-text {
+      flex: 2 1 320px;
+    }
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+    .autodrive-text p + p {
+      margin-top: 1em;
+    }
+  </style>
+
+  <section class="content-section">
+    <h1><i class="fas fa-fw fa-car" aria-hidden="true"></i>AutoDrive Challenge II</h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="slide-number">1 / 3</div>
+        <img src="{{ base_path }}/images/autodrive/bolt_northern_lights.JPG" alt="Bolt Under the Northern Lights">
+        <div class="slide-caption">Bolt Under the Northern Lights</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide-number">2 / 3</div>
+        <img src="{{ base_path }}/images/autodrive/may_testing.JPG" alt="Vehicle Testing During the Month Before Competition">
+        <div class="slide-caption">Vehicle Testing During the Month Before Competition</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide-number">3 / 3</div>
+        <img src="{{ base_path }}/images/autodrive/bolt_fast.jpg" alt="Vehicle GNSS Calibration at Year 3 Competition">
+        <div class="slide-caption">Vehicle GNSS Calibration at Year 3 Competition</div>
+      </div>
+    </div>
+    <div class="slide-dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <p>
+      The AutoDrive II Challenge is a GM and SAE sponsored event in which universities receive a stock Chevy EUV
+      Bolt and make it autonomous over 5 years. This edition of the challenge began in 2021 and will be ending in
+      June 2026. Scored challenges progressively get harder as each year passes with topics including base-level
+      object detection and vehicle control, while later spanning to non-gps-based localization and multi-stop
+      trips. Teams then meet in June of each year to compete at University of Michigan's test track, M-City, to
+      compete in the year's given challenges. To see more about the AutoDrive Challenge, please visit the link
+      below.
+    </p>
+
+    <div class="autodrive-links">
+      <a href="https://www.autodrivechallenge.com/"><button class="button"><span class="button-content">Autodrive Challenge II</span></button></a>
+      <a href="https://rse.mtu.edu/"><button class="rsebutton"><span class="button-content">Robotics Systems Enterprise</span></button></a>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-eye" aria-hidden="true"></i>Perception Team</h2>
+    <div class="autodrive-row">
+      <div class="autodrive-images">
+        <img src="{{ base_path }}/images/autodrive/lidar.png" alt="Lidar Point Cloud">
+        <img src="{{ base_path }}/images/autodrive/lidar_ground_plane_detection.png" alt="Lidar Ground Plane Segmentation">
+        <img src="{{ base_path }}/images/autodrive/camera_image_classification.png" alt="YoloV5 Object Classification">
+      </div>
+      <div class="autodrive-text">
+        <p>
+          In my time on AutoDrive, most of my work has been within the perception team and any of the tasks that
+          we had set. I originally started on the project in my sophomore year, and barely knew how to code in
+          C++ let along even knowing how to use ROS, LiDAR, or remotely understand what I was getting into. I
+          began with basic euclidean clustering and plane ground filtering as a starting ground. Although I'm not
+          fully proud of the code me and my fellow members put together, we were able to at least remove the
+          ground plane and output some bounding boxes of objects in our surround environment. In addition to my
+          work within the lidar side of our perception team, I also did a fair share of figuring out how to
+          integrate our yolov5 camera detection and classification into our ros stack. This involved converting
+          our neural network into on onnx file and then integrating it into a C++ environment for our vehicle to
+          run. Additional tasks during this year also included some work on the sensor fusion section for lidar
+          and camera object associating.
+        </p>
+        <p>
+          In my second year, I originally started out on that process but got pulled into working for the Mapping
+          and Planning Team due to a friend being swamped with writting two subsystems for the vehicle on their
+          own. You'll be able to read about my work on that side in the Mapping and Planning section below.
+        </p>
+        <p>
+          As for my third and final year, I'm the one writing a whole subsystem on my own... yippee. Which is
+          actually really cool but definitely a huge task. More specifics will be added in my projects section
+          under the name <a href="{{ base_path }}/projects/diviner/">The Diviner</a>, as that is my holy grail of
+          AutoDrive and my biggest accomplishment up to this point. It's not the best code but its definitely
+          better than what I used to do.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-route" aria-hidden="true"></i>Mapping and Planning Team</h2>
+    <div class="autodrive-row">
+      <div class="autodrive-images">
+        <img src="{{ base_path }}/images/autodrive/long_path_plan.png" alt="M-City Path Planning Example">
+      </div>
+      <div class="autodrive-text">
+        <p>
+          As stated in my perception section, I was pulled into the Mapping and Planning team to help out a
+          friend who was swamped with trying to write the path planner and behavioral subsystems. During this
+          time, I worked to help implement our D* path planner which you can see in use in the image to the left.
+          Our aim was just basic level path planning and navigational abilities with standard point A to point B
+          travel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-location-crosshairs" aria-hidden="true"></i>Custom KISS-ICP Implementation</h2>
+    <div class="autodrive-row">
+      <div class="autodrive-images">
+        <img src="{{ base_path }}/images/autodrive/localization.png" alt="KISS-ICP Implementation">
+      </div>
+      <div class="autodrive-text">
+        <p>This is probably my biggest accomplishment on the AutoDrive team.</p>
+      </div>
+    </div>
+  </section>
 </div>
 
 <script>
   let slideIndex = 0;
   showSlides();
-  
+
   function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) { slideIndex = 1; }
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 5000);
   }
 </script>
-
-</body>
-<body
-    <div id="wrap">
-        <p>
-            The AutoDrive II Challenge is a GM and SAE sponsored event in which universities receive a stock Chevy EUV Bolt and make it autonomous over 5 years.
-            This edition of the challenge began in 2021 and will be ending in June 2026.
-            Scored challenges progressively get harder as each year passes with topics including base-level object detection and vehicle control, while later spanning to non-gps-based localization and multi-stop trips.
-            Teams then meet in June of each year to compete at University of Michigan's test track, M-City, to compete in the year's given challenges.
-            To see more about the AutoDrive Challenge, please visit the link below.
-        </p>
-        <div id="left_col">
-            <div style="text-align: center;">
-                <a href="https://www.autodrivechallenge.com/">
-                    <button class="button"><span class="button-content">Autodrive Challenge II</span></button>
-                </a>
-            </div>
-        </div>
-        <div id="right_col">
-            <div style="text-align: center;">
-                <a href="https://rse.mtu.edu/">
-                    <button class="rsebutton"><span class="button-content">Robotics Systems Enterprise</span></button>
-                </a>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="content-row">
-        </div>
-        <div class="content-row">
-            <div class="image-container">
-                <div>
-                    <img src="../../images/autodrive/lidar.png" alt="Lidar Point Cloud">
-                </div>
-                <br>
-                <div>
-                    <img src="../../images/autodrive/lidar_ground_plane_detection.png" alt="Lidar Ground Plane Segmentation">
-                </div>
-                <br>
-                <div>
-                    <img src="../../images/autodrive/camera_image_classification.png" alt="YoloV5 Object Classification">
-                </div>
-            </div>
-            <div class="text-container">
-                <div style="text-align: center;"><b>Perception Team</b></div>
-                <p>
-                    In my time on AutoDrive, most of my work has been within the perception team and any of the tasks that we had set.
-                    I originally started on the project in my sophomore year, and barely knew how to code in C++ let along even knowing how to use ROS, LiDAR, or remotely understand what I was getting into.
-                    I began with basic euclidean clustering and plane ground filtering as a starting ground.
-                    Although I'm not fully proud of the code me and my fellow members put together, we were able to at least remove the ground plane and output some bounding boxes of objects in our surround environment.
-                    In addition to my work within the lidar side of our perception team, I also did a fair share of figuring out how to integrate our yolov5 camera detection and classification into our ros stack.
-                    This involved converting our neural network into on onnx file and then integrating it into a C++ environment for our vehicle to run.
-                    Additional tasks during this year also included some work on the sensor fusion section for lidar and camera object associating.
-                </p>
-                <br>
-                <p>
-                    In my second year, I originally started out on that process but got pulled into working for the Mapping and Planning Team due to a friend being swamped with writting two subsystems for the vehicle on their own.
-                    You'll be able to read about my work on that side in the Mapping and Planning section below.
-                </p>
-                <br>
-                <p>
-                    As for my third and final year, I'm the one writing a whole subsystem on my own... yippee.
-                    Which is actually really cool but definitely a huge task.
-                    More specifics will be added in my projects section under the name <a href="https://rcverbru.github.io/projects/diviner/">The Diviner</a>, as that is my holy grail of AutoDrive and my biggest accomplishment up to this point.
-                    It's not the best code but its definitely better than what I used to do.
-                    
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-container">
-                <img src="../../images/autodrive/long_path_plan.png" alt="M-City Path Planning Example">
-            </div>
-            <div class="text-container">
-                <div style="text-align: center;"><b>Mapping and Planning Team</b></div>
-                <p>
-                    As stated in my perception section, I was pulled into the Mapping and Planning team to help out a friend who was swamped with trying to write the path planner and behavioral subsystems.
-                    During this time, I worked to help implement our D* path planner which you can see in use in the image to the left.
-                    Our aim was just basic level path planning and navigational abilities with standard point A to point B travel.
-                    
-                </p>
-            </div>
-        </div>
-        <div class="content-row">
-            <div class="image-container">
-                <img src="../../images/autodrive/localization.png" alt="KISS-ICP Implementation">
-            </div>
-            <div class="text-container">
-                <div style="text-align: center;"><b>Custom KISS-ICP Implementation</b></div>
-                <p>
-                    This is probably my biggest accomplishment on the AutoDrive team.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- <div id="wrap">
-        <div id="left_col">
-            <img src="../../images/autodrive/lidar.png" width="100%" alt="Lidar Point Cloud">
-        </div>
-        <div id="right_col">
-            <div  style="text-align: center;"><b>Perception</b></div>
-            <p>
-                <div style="margin-left: 10px;">
-                    In my time on AutoDrive, most of my work has been within the perception team and any of the tasks that we had set.
-                    I originally started on the project in my sophomore year, and barely knew how to code in C++ let along even knowing how to use ROS, LiDAR, or remotely understand what I was getting into.
-                    I began with basic euclidean clustering and plane ground filtering as a starting ground.
-                    Although I'm not proud of the code me and my fellow members put together, we were able to at least remove the ground plane and output some bounding boxes of objects in our surround environment.
-                    As it is now I would love to go back with my current knowledge and rewrite the whole lidar processing node to perform better than it currently is.    
-                </div>
-                <br>
-                <div style="margin-left: 10px;">
-                    In my second year, I originally started out on that process but got pulled into working for the Mapping and Planning Team due to a friend being swamped with writting two subsystems for the vehicle on their own.
-                    You'll be able to read about my work on that side in the Mapping and Planning section below.
-                </div>
-                <br>
-                <div style="margin-left: 10px;">
-                    Now in my third year, I'm the one writing a whole subsystem on my own... yippee.
-                    Which is actually really cool but definitely a huge task.
-                    More specifics will be added in my Localization section as that is my holy grail of AutoDrive and my biggest accomplishment up to this point.
-                    It's not the best code but its definitely better than what I used to do.
-                </div>
-            </p>
-        </div>
-    </div>
-    <div id="wrap">
-        <div id="left_col">
-            <img src="../../images/autodrive/long_path_plan.png" width="100%" alt="M-City Path Planning Example">
-        </div>
-        <div id="right_col">
-            <div  style="text-align: center;"><b>Mapping and Planning</b></div>
-            <p>
-                As stated in my perception section, I was pulled into the Mapping and Planning team to help out a friend who was swamped with trying to write the path planner and behavioral subsystems.
-                
-            </p>
-        </div>
-    </div> -->
-</body>
-</html>
