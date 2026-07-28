@@ -1,12 +1,67 @@
 [
   {
-    "id": 0,
-    "name": "Placeholder ride — replace me",
+    "id": 19466212586,
+    "name": "Dino ridin 🦖",
     "type": "Ride",
-    "distance": 32186.9,
-    "moving_time": 5400,
-    "total_elevation_gain": 412.0,
-    "start_date_local": "2026-07-27T08:15:00Z",
-    "start_latlng": [44.8547, -93.4708]
+    "distance": 12872.7,
+    "moving_time": 4780,
+    "total_elevation_gain": 289.6,
+    "start_date_local": "2026-07-25T15:52:36Z",
+    "start_latlng": [
+      47.459294,
+      -87.811766
+    ]
+  },
+  {
+    "id": 19438793232,
+    "name": "Eatin oranges",
+    "type": "RockClimbing",
+    "distance": 1313,
+    "moving_time": 1535,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-07-23T16:57:08Z",
+    "start_latlng": [
+      44.993557,
+      -93.277583
+    ]
+  },
+  {
+    "id": 19411459548,
+    "name": "I think someone was playing Tokyo drift in the background 🤔",
+    "type": "Ride",
+    "distance": 29202.5,
+    "moving_time": 6773,
+    "total_elevation_gain": 392.2,
+    "start_date_local": "2026-07-21T18:06:41Z",
+    "start_latlng": [
+      44.843314,
+      -93.421181
+    ]
+  },
+  {
+    "id": 19343389303,
+    "name": "Successful crimpies",
+    "type": "RockClimbing",
+    "distance": 524.1,
+    "moving_time": 506,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-07-16T17:44:38Z",
+    "start_latlng": [
+      44.993633,
+      -93.277742
+    ]
+  },
+  {
+    "id": 19315886303,
+    "name": "Toasty outside = climb inside",
+    "type": "RockClimbing",
+    "distance": 762.4,
+    "moving_time": 654,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-07-14T16:44:44Z",
+    "start_latlng": [
+      44.993626,
+      -93.277606
+    ]
   }
 ]
