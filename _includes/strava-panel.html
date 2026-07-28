@@ -3,7 +3,7 @@
 
 <div class="strava-panel">
   <div class="strava-panel__list">
-    <h3><i class="fab fa-strava"></i> Recent Rides</h3>
+    <h3><i class="fab fa-strava"></i> Recent Activities</h3>
     <ul class="strava-panel__activities">
       {% for activity in recent_activities %}
         {% assign miles = activity.distance | times: 0.000621371 %}
@@ -48,9 +48,35 @@
     maxZoom: 18
   }).addTo(map);
 
+  var activityStyles = {
+    Ride: { color: '#fc4c02', icon: 'fa-bicycle' },
+    GravelRide: { color: '#fc4c02', icon: 'fa-bicycle' },
+    MountainBikeRide: { color: '#fc4c02', icon: 'fa-bicycle' },
+    VirtualRide: { color: '#fc4c02', icon: 'fa-bicycle' },
+    EBikeRide: { color: '#fc4c02', icon: 'fa-bicycle' },
+    Run: { color: '#1e88e5', icon: 'fa-person-running' },
+    TrailRun: { color: '#1e88e5', icon: 'fa-person-running' },
+    Hike: { color: '#43a047', icon: 'fa-person-hiking' },
+    Walk: { color: '#8e24aa', icon: 'fa-person-walking' },
+    Swim: { color: '#00acc1', icon: 'fa-person-swimming' },
+    AlpineSki: { color: '#546e7a', icon: 'fa-person-skiing' },
+    NordicSki: { color: '#546e7a', icon: 'fa-person-skiing' },
+    Snowboard: { color: '#546e7a', icon: 'fa-person-snowboarding' }
+  };
+  var defaultStyle = { color: '#757575', icon: 'fa-location-dot' };
+
   var points = activities.map(function (activity) {
     var latlng = [activity.start_latlng[0], activity.start_latlng[1]];
-    L.marker(latlng)
+    var style = activityStyles[activity.type] || defaultStyle;
+    var icon = L.divIcon({
+      className: 'strava-marker',
+      html: '<span class="strava-marker__pin" style="background:' + style.color + '">'
+        + '<i class="fas ' + style.icon + '"></i></span>',
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+      popupAnchor: [0, -13]
+    });
+    L.marker(latlng, { icon: icon })
       .addTo(map)
       .bindPopup('<strong>' + activity.name + '</strong><br>' + activity.type);
     return latlng;

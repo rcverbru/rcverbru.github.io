@@ -73,3 +73,16 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 }
+
+.strava-marker__pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(#000, 0.4);
+  color: #fff;
+  font-size: 12px;
+}
