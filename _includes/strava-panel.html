@@ -1,0 +1,62 @@
+{% assign recent_activities = site.data.strava_activities | slice: 0, 5 %}
+{% assign mapped_activities = recent_activities | where_exp: "a", "a.start_latlng.size == 2" %}
+
+<div class="strava-panel">
+  <div class="strava-panel__list">
+    <h3><i class="fab fa-strava"></i> Recent Rides</h3>
+    <ul class="strava-panel__activities">
+      {% for activity in recent_activities %}
+        {% assign miles = activity.distance | times: 0.000621371 %}
+        {% assign hours = activity.moving_time | divided_by: 3600.0 %}
+        <li class="strava-panel__activity">
+          <a href="https://www.strava.com/activities/{{ activity.id }}" target="_blank" rel="noopener noreferrer">
+            {{ activity.name }}
+          </a>
+          <div class="strava-panel__meta">
+            <span>{{ activity.start_date_local | date: "%b %-d, %Y" }}</span>
+            <span>{{ miles | round: 1 }} mi</span>
+            <span>{{ hours | round: 1 }} hr</span>
+          </div>
+        </li>
+      {% else %}
+        <li class="strava-panel__activity strava-panel__empty">No recent activities yet.</li>
+      {% endfor %}
+    </ul>
+    <a class="strava-panel__profile-link" href="https://www.strava.com/athletes/121608394" target="_blank" rel="noopener noreferrer">View full profile on Strava &rarr;</a>
+  </div>
+
+  <div class="strava-panel__map">
+    <div id="strava-map"></div>
+    {% if mapped_activities == empty %}
+      <p class="strava-panel__empty">No location data for recent activities.</p>
+    {% endif %}
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  var activities = {{ mapped_activities | jsonify }};
+  if (!activities.length) { return; }
+
+  var map = L.map('strava-map');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  var points = activities.map(function (activity) {
+    var latlng = [activity.start_latlng[0], activity.start_latlng[1]];
+    L.marker(latlng)
+      .addTo(map)
+      .bindPopup('<strong>' + activity.name + '</strong><br>' + activity.type);
+    return latlng;
+  });
+
+  map.fitBounds(points, { padding: [20, 20], maxZoom: 13 });
+  window.addEventListener('load', function () { map.invalidateSize(); });
+})();
+</script>

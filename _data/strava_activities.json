@@ -6,6 +6,7 @@
     "distance": 32186.9,
     "moving_time": 5400,
     "total_elevation_gain": 412.0,
-    "start_date_local": "2026-07-27T08:15:00Z"
+    "start_date_local": "2026-07-27T08:15:00Z",
+    "start_latlng": [44.8547, -93.4708]
   }
 ]

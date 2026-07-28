@@ -13,7 +13,7 @@ if (!STRAVA_CLIENT_ID || !STRAVA_CLIENT_SECRET || !STRAVA_REFRESH_TOKEN) {
 
 const OUTPUT_PATH = path.join(__dirname, "..", "_data", "strava_activities.json");
 const ACTIVITY_COUNT = 5;
-const FIELDS = ["id", "name", "type", "distance", "moving_time", "total_elevation_gain", "start_date_local"];
+const FIELDS = ["id", "name", "type", "distance", "moving_time", "total_elevation_gain", "start_date_local", "start_latlng"];
 
 async function getAccessToken() {
   const res = await fetch("https://www.strava.com/oauth/token", {
