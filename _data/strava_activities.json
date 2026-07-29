@@ -1,5 +1,19 @@
 [
   {
+    "id": 19508269962,
+    "name": "3 dudes 1 climb",
+    "type": "RockClimbing",
+    "distance": 752.2,
+    "moving_time": 681,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-07-28T18:19:20Z",
+    "start_latlng": [
+      44.993529,
+      -93.277533
+    ],
+    "workout_type": 28
+  },
+  {
     "id": 19466212586,
     "name": "Dino ridin 🦖",
     "type": "Ride",
@@ -194,19 +208,5 @@
       -93.426809
     ],
     "workout_type": null
-  },
-  {
-    "id": 19015112700,
-    "name": "Doin some climbin",
-    "type": "RockClimbing",
-    "distance": 832.3,
-    "moving_time": 695,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-06-21T13:59:11Z",
-    "start_latlng": [
-      44.993604,
-      -93.277556
-    ],
-    "workout_type": 28
   }
 ]
