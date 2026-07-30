@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "b14585909",
+    "type": "bike",
+    "name": "Pippin",
+    "brand_name": "cayon",
+    "model_name": "spectral 125",
+    "distance": 1337986,
+    "primary": false
+  },
+  {
+    "id": "b16756378",
+    "type": "bike",
+    "name": "Smaug",
+    "brand_name": "Canyon",
+    "model_name": "Grizl 7 RAW",
+    "distance": 0,
+    "primary": false
+  },
+  {
+    "id": "g25527216",
+    "type": "shoe",
+    "name": "Altra Torin 8 Gimli",
+    "brand_name": "Altra",
+    "model_name": "Torin 8",
+    "distance": 130716,
+    "primary": false
+  },
+  {
+    "id": "g15267650",
+    "type": "shoe",
+    "name": "Altra Superior 6 Zoomers",
+    "brand_name": "Altra",
+    "model_name": "Superior 6",
+    "distance": 194035,
+    "primary": false
+  }
+]
