@@ -1,0 +1,20 @@
+[
+  {
+    "id": "b0",
+    "type": "bike",
+    "name": "Placeholder Bike",
+    "brand_name": "Specialized",
+    "model_name": "Tarmac SL7",
+    "distance": 804672.0,
+    "primary": true
+  },
+  {
+    "id": "g0",
+    "type": "shoe",
+    "name": "Placeholder Shoes",
+    "brand_name": "Hoka",
+    "model_name": "Speedgoat 5",
+    "distance": 160934.0,
+    "primary": true
+  }
+]

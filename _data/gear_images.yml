@@ -1,0 +1,5 @@
+# Maps a Strava gear ID (see _data/strava_gear.json after the Action runs)
+# to a manufacturer image dropped in /images/gear/.
+# Example:
+# b1234567: /images/gear/tarmac-sl7.jpg
+# g7654321: /images/gear/speedgoat-5.jpg

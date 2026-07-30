@@ -1,0 +1,24 @@
+<div class="strava-box">
+  <h3><i class="fas fa-fw fa-toolbox"></i> Gear</h3>
+  <div class="gear-grid">
+    {% for gear in site.data.strava_gear %}
+      {% assign gear_image = site.data.gear_images[gear.id] %}
+      {% assign miles = gear.distance | times: 0.000621371 %}
+      <div class="gear-card">
+        {% if gear_image %}
+          <img src="{{ gear_image | relative_url }}" alt="{{ gear.brand_name }} {{ gear.model_name }}">
+        {% else %}
+          <div class="gear-card__placeholder">
+            <i class="fas {% if gear.type == 'bike' %}fa-bicycle{% else %}fa-shoe-prints{% endif %}"></i>
+          </div>
+        {% endif %}
+        <div class="gear-card__caption">
+          <div class="gear-card__name">{{ gear.brand_name }} {{ gear.model_name }}</div>
+          <div class="gear-card__meta">{{ miles | round: 0 }} mi{% if gear.primary %} &middot; Primary{% endif %}</div>
+        </div>
+      </div>
+    {% else %}
+      <p class="strava-panel__empty">No gear synced yet.</p>
+    {% endfor %}
+  </div>
+</div>

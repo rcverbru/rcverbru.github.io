@@ -22,14 +22,12 @@
   flex: 1 1 300px;
 }
 
-.strava-panel__list {
-  h3 {
-    margin-top: 0;
+.strava-box h3 {
+  margin-top: 0;
 
-    i {
-      color: #fc4c02;
-      margin-right: 0.3em;
-    }
+  i {
+    color: #fc4c02;
+    margin-right: 0.3em;
   }
 }
 
@@ -95,4 +93,51 @@
   box-shadow: 0 1px 3px rgba(#000, 0.4);
   color: #fff;
   font-size: 12px;
+}
+
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25em;
+}
+
+.gear-card {
+  overflow: hidden;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+}
+
+.gear-card img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.gear-card__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  font-size: 2.5em;
+  color: var(--global-text-color-light, inherit);
+  opacity: 0.35;
+  background: var(--global-border-color);
+}
+
+.gear-card__caption {
+  padding: 0.6em 0.9em;
+  text-align: center;
+}
+
+.gear-card__name {
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.gear-card__meta {
+  margin-top: 0.2em;
+  font-size: $type-size-7;
+  opacity: 0.75;
 }
