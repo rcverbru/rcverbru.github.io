@@ -16,6 +16,7 @@ const ACTIVITIES_OUTPUT_PATH = path.join(__dirname, "..", "_data", "strava_activ
 const GEAR_OUTPUT_PATH = path.join(__dirname, "..", "_data", "strava_gear.json");
 const ACTIVITY_COUNT = 15;
 const FIELDS = ["id", "name", "type", "distance", "moving_time", "total_elevation_gain", "start_date_local", "start_latlng", "workout_type"];
+const PHOTO_SIZE = 200;
 
 async function getAccessToken() {
   const res = await fetch("https://www.strava.com/oauth/token", {
@@ -48,6 +49,22 @@ async function getRecentActivities(accessToken) {
   }
 
   return res.json();
+}
+
+async function getActivityPhotos(accessToken, activityId) {
+  const res = await fetch(
+    `https://www.strava.com/api/v3/activities/${activityId}/photos?size=${PHOTO_SIZE}`,
+    { headers: { Authorization: `Bearer ${accessToken}` } }
+  );
+
+  if (!res.ok) {
+    throw new Error(`Photo fetch failed for activity ${activityId}: ${res.status} ${await res.text()}`);
+  }
+
+  const photos = await res.json();
+  return photos
+    .map((photo) => photo.urls && Object.values(photo.urls)[0])
+    .filter(Boolean);
 }
 
 async function getAthlete(accessToken) {
@@ -102,9 +119,17 @@ async function main() {
   const accessToken = await getAccessToken();
 
   const activities = await getRecentActivities(accessToken);
-  const trimmedActivities = activities.map((activity) =>
-    Object.fromEntries(FIELDS.map((field) => [field, activity[field]]))
-  );
+  const trimmedActivities = [];
+  for (const activity of activities) {
+    const trimmed = Object.fromEntries(FIELDS.map((field) => [field, activity[field]]));
+    if (activity.total_photo_count > 0) {
+      const photos = await getActivityPhotos(accessToken, activity.id);
+      if (photos.length) {
+        trimmed.photo = photos[0];
+      }
+    }
+    trimmedActivities.push(trimmed);
+  }
   fs.writeFileSync(ACTIVITIES_OUTPUT_PATH, JSON.stringify(trimmedActivities, null, 2) + "\n");
   console.log(`Wrote ${trimmedActivities.length} activities to ${ACTIVITIES_OUTPUT_PATH}`);
 

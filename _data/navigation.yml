@@ -39,13 +39,12 @@ main:
       - title: "The Diviner"
         url: /projects/diviner/
 
-  - title: "CV"
-    # url: https://rcverbru.github.io/files/ryan_verbrugge_cv.pdf
-    url: /cv/
-
   - title: "About Me"
     url: /background/
-
-  - title: "Outdoor Adventures"
-    url: /outdoor-adventures/
+    children:
+      - title: "CV"
+        # url: https://rcverbru.github.io/files/ryan_verbrugge_cv.pdf
+        url: /cv/
+      - title: "Outdoor Adventures"
+        url: /outdoor-adventures/
 

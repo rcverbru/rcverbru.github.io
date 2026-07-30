@@ -1,17 +1,65 @@
 ---
 layout: archive
-title: "Bike Garage"
+title: "Outdoor Adventures"
 permalink: /outdoor-adventures/
 author_profile: true
 redirect_from:
-  - /bikes
-  - /bike
-  - /run
-  - /running
+- /bikes
+- /bike
+- /run
+- /running
 ---
 
-<h1><i class="fas fa-fw fa-car" aria-hidden="true"></i>Outdoor Adventures</h2>
+{% include base_path %}
 
-{% include strava-panel.html %}
+<div class="profile-page">
+  <style>
+    /* Page-specific layout not worth generalizing to the shared partial */
+    .adventures-intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      align-items: flex-start;
+    }
 
-{% include strava-gear.html %}
+    .adventures-intro__text {
+      flex: 2 1 320px;
+    }
+
+    .adventures-intro__calendar {
+      flex: 1 1 260px;
+      background: var(--global-box-background-color);
+      color: var(--global-box-text-color);
+      border: 1px solid var(--global-border-color);
+      border-radius: 8px;
+      padding: 1em 1.25em;
+    }
+
+    .adventures-intro__calendar h3 {
+      margin: 0 0 0.5em;
+    }
+  </style>
+
+  <section class="content-section">
+    <h1><i class="fas fa-fw fa-tree" aria-hidden="true"></i>Outdoor Adventures</h2>
+    <div class="adventures-intro">
+      <div class="adventures-intro__text">
+        <p>
+          I may claim to be a software engineer, but I do in fact touch quite a bit of grass. For proof I made
+          this page to show off some of the cool places and activities I've done. Here you can find some of my
+          activities I've recorded on Strava as well as what gear I use. Eventually I might add some recommended
+          adventures to go on but that involves thinking about what people should go see and remembering what the
+          names of those places are. For now, enjoy the list of activities and upcoming races I'm participating in.
+        </p>
+      </div>
+      <div class="adventures-intro__calendar">
+        <h3><i class="fas fa-fw fa-calendar-days" aria-hidden="true"></i>Upcoming Races &amp; Events</h3>
+        <p class="strava-panel__empty">Calendar coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  {% include strava-panel.html %}
+
+  {% include strava-gear.html %}
+</div>

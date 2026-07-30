@@ -82,6 +82,34 @@
   box-shadow: $box-shadow;
 }
 
+.strava-panel__photos {
+  display: flex;
+  gap: 0.75em;
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid var(--global-border-color);
+  overflow-x: auto;
+}
+
+.strava-panel__photo {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.strava-panel__photo img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+  transition: transform 0.15s ease-in-out;
+}
+
+.strava-panel__photo:hover img {
+  transform: scale(1.05);
+}
+
 .strava-marker__pin {
   display: flex;
   align-items: center;

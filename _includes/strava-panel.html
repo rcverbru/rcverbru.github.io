@@ -1,5 +1,6 @@
 {% assign recent_activities = site.data.strava_activities | slice: 0, 15 %}
 {% assign mapped_activities = recent_activities | where_exp: "a", "a.start_latlng.size == 2" %}
+{% assign photo_activities = recent_activities | where_exp: "a", "a.photo" %}
 
 <div class="strava-box">
   <div class="strava-panel">
@@ -33,6 +34,16 @@
       {% endif %}
     </div>
   </div>
+
+  {% if photo_activities != empty %}
+    <div class="strava-panel__photos">
+      {% for activity in photo_activities %}
+        <a class="strava-panel__photo" href="https://www.strava.com/activities/{{ activity.id }}" target="_blank" rel="noopener noreferrer" title="{{ activity.name }}">
+          <img src="{{ activity.photo }}" alt="{{ activity.name }}" loading="lazy">
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
