@@ -166,9 +166,6 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
-  width: 10000px; // force the table-cell to shrink to its container instead of growing to fit content
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 
   @include breakpoint($large) {
     display: block;
