@@ -1,5 +1,17 @@
 [
   {
+    "id": 19538103844,
+    "name": "Forgot to hit start on strava :(",
+    "type": "RockClimbing",
+    "distance": 0,
+    "moving_time": 3600,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-07-30T18:20:28Z",
+    "start_latlng": [],
+    "workout_type": 28,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/S1gORTzVw9Ra3-qowAWcfo58i7J6yGHXnysxPlupzn8-256x245.jpg"
+  },
+  {
     "id": 19508269962,
     "name": "3 dudes 1 climb",
     "type": "RockClimbing",
@@ -199,19 +211,5 @@
       -93.277502
     ],
     "workout_type": 28
-  },
-  {
-    "id": 19028824140,
-    "name": "Rippin'",
-    "type": "Ride",
-    "distance": 7840.5,
-    "moving_time": 1919,
-    "total_elevation_gain": 113.7,
-    "start_date_local": "2026-06-22T18:18:59Z",
-    "start_latlng": [
-      44.90048,
-      -93.426809
-    ],
-    "workout_type": null
   }
 ]
