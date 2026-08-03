@@ -1,5 +1,20 @@
 [
   {
+    "id": 19575997873,
+    "name": "Kicking logan out of town",
+    "type": "Ride",
+    "distance": 10983.7,
+    "moving_time": 3625,
+    "total_elevation_gain": 191,
+    "start_date_local": "2026-08-02T15:17:21Z",
+    "start_latlng": [
+      47.107898,
+      -88.552247
+    ],
+    "workout_type": null,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/a0tNw10UySJjIkw_Xw7MB1vREFwclurYS-OYcfGvCYA-256x192.jpg"
+  },
+  {
     "id": 19562469271,
     "name": "Easting at the bluffet 😋",
     "type": "Ride",
@@ -198,19 +213,5 @@
     ],
     "workout_type": null,
     "photo": "https://d35tn3x5zm6xrc.cloudfront.net/dOQ-vLdUx35B-H7vvr71COXyrfWreYwCteqJe2lz8s8/thumbnails/dOQ-vLdUx35B-H7vvr71COXyrfWreYwCteqJe2lz8s8_600x600.jpg"
-  },
-  {
-    "id": 19068032331,
-    "name": "The crimps be crimping",
-    "type": "RockClimbing",
-    "distance": 213.1,
-    "moving_time": 333,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-06-25T18:02:09Z",
-    "start_latlng": [
-      44.993617,
-      -93.277833
-    ],
-    "workout_type": 28
   }
 ]
