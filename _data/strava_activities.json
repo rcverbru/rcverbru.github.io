@@ -1,5 +1,20 @@
 [
   {
+    "id": 19589402645,
+    "name": "Runnin it back",
+    "type": "Ride",
+    "distance": 13567.9,
+    "moving_time": 5779,
+    "total_elevation_gain": 238,
+    "start_date_local": "2026-08-03T12:25:37Z",
+    "start_latlng": [
+      47.466804,
+      -87.888272
+    ],
+    "workout_type": null,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/dc819MJaznk3Z6UZjberQZK3o2j2aHfgk6C3OXtjFpw-192x256.jpg"
+  },
+  {
     "id": 19575997873,
     "name": "Kicking logan out of town",
     "type": "Ride",
@@ -198,20 +213,5 @@
     ],
     "workout_type": 28,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/Ba-TtyZaW7JFlaMTR0gc41ZUXg7R-LKjb6eOWTrqaAE-192x256.jpg"
-  },
-  {
-    "id": 19102716123,
-    "name": "Big jump, little air, lunch of champions",
-    "type": "Ride",
-    "distance": 21270.5,
-    "moving_time": 5142,
-    "total_elevation_gain": 224.8,
-    "start_date_local": "2026-06-28T13:30:57Z",
-    "start_latlng": [
-      47.115859,
-      -88.546102
-    ],
-    "workout_type": null,
-    "photo": "https://d35tn3x5zm6xrc.cloudfront.net/dOQ-vLdUx35B-H7vvr71COXyrfWreYwCteqJe2lz8s8/thumbnails/dOQ-vLdUx35B-H7vvr71COXyrfWreYwCteqJe2lz8s8_600x600.jpg"
   }
 ]
