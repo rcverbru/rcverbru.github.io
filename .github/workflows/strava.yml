@@ -2,7 +2,8 @@ name: Update Strava Activities
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # daily at 13:00 UTC
+    - cron: '0 16 * * *'  # daily at 12:00 Eastern (EDT, UTC-4)
+    - cron: '0 4 * * *'  # daily at 00:00 Eastern (EDT, UTC-4)
   workflow_dispatch:
 
 jobs:
