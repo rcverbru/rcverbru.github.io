@@ -83,6 +83,12 @@
   description: "Data Collection Site"
   data_collected: true
 
+- name: "South Lake (Aztec) Mine"
+  lat: 46.77556
+  lng: -89.05368
+  description: "Data Collection Site"
+  data_collected: true
+
 - name: "Mead Mine"
   lat: 46.816511
   lng: -89.72742
