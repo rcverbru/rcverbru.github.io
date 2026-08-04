@@ -14,6 +14,9 @@
             <a href="https://www.strava.com/activities/{{ activity.id }}" target="_blank" rel="noopener noreferrer">
               {{ activity.name }}
             </a>
+            {% if activity.workout_type == 1 or activity.workout_type == 11 %}
+              <span class="strava-panel__race-tag"><i class="fas fa-flag-checkered"></i> Race</span>
+            {% endif %}
             <div class="strava-panel__meta">
               <span>{{ activity.start_date_local | date: "%b %-d, %Y" }}</span>
               <span>{{ miles | round: 1 }} mi</span>
@@ -81,7 +84,7 @@
   var raceStyle = { color: '#111111', icon: 'fa-flag-checkered' };
   var raceWorkoutTypes = [1, 11]; /* 1 = race (Run), 11 = race (Ride) */
 
-  var points = activities.map(function (activity) {
+  var points = activities.map(function (activity, index) {
     var latlng = [activity.start_latlng[0], activity.start_latlng[1]];
     var style = activityStyles[activity.type] || defaultStyle;
     if (raceWorkoutTypes.indexOf(activity.workout_type) !== -1) {
@@ -95,7 +98,9 @@
       iconAnchor: [13, 13],
       popupAnchor: [0, -13]
     });
-    L.marker(latlng, { icon: icon })
+    /* activities are newest-first; boost zIndex so newer markers always sit above
+       older ones instead of Leaflet's default latitude-based stacking */
+    L.marker(latlng, { icon: icon, zIndexOffset: (activities.length - index) * 1000 })
       .addTo(map)
       .bindPopup('<strong>' + activity.name + '</strong><br>' + activity.type);
     return latlng;
