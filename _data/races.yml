@@ -1,0 +1,40 @@
+# Upcoming races & events, shown on the Outdoor Adventures page.
+# Only entries with a date today or later are displayed; past entries can be
+# left in place (or removed) since they're filtered out automatically.
+#
+# Fields:
+#   name:     required - race/event name
+#   date:     required - "YYYY-MM-DD" (must be quoted, or YAML parses it as
+#             a Date object instead of a string and the upcoming-date filter
+#             on the page silently drops the entry)
+#   location: optional - city/venue
+#   url:      optional - registration or event info page
+#   type:     optional - Ride, Run, Hike, etc. (controls the icon)
+#
+# - name: "Example 100k Gravel Grinder"
+#   date: "2026-09-12"
+#   location: "Somewhere, ON"
+#   url: "https://example.com"
+#   type: Ride
+
+- name: "Great Deer Chase"
+  date: "2026-08-15"
+  location: "Calumet, MI"
+  url: "https://www.greatdeerchase.org/"
+  type: XC MTB Race
+- name: "Copper Harbor Trails Fest"
+  date: "2026-09-04"
+  location: "Copper Harbor, MI"
+  url: "https://www.copperharbortrails.org/copper-harbor-trails-fest"
+  type: MTB Fest
+- name: "Copper Country Color Tour"
+  date: "2026-09-26"
+  location: "Houghton, MI"
+  url: "https://cycling.mtu.edu/events/color-tour/"
+  type: Gravel Race
+- name: "Keweenaw Color Run"
+  date: "2026-10-03"
+  location: "Houghton, MI"
+  url: "https://circleupkeweenaw.org/color-run"
+  type: 5k Race
+

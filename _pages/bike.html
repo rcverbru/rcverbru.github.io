@@ -23,11 +23,14 @@ redirect_from:
     }
 
     .adventures-intro__text {
-      flex: 2 1 320px;
+      flex: 1 1 300px;
     }
 
     .adventures-intro__calendar {
-      flex: 1 1 260px;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
       background: var(--global-box-background-color);
       color: var(--global-box-text-color);
       border: 1px solid var(--global-border-color);
@@ -36,14 +39,81 @@ redirect_from:
     }
 
     .adventures-intro__calendar h3 {
+      flex: 0 0 auto;
       margin: 0 0 0.5em;
+    }
+
+    .races-list {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 0.75em;
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* lets .races-list__date/.races-list__details act as direct grid cells
+       sharing one column track, so every row's divider lines up */
+    .races-list__item {
+      display: contents;
+    }
+
+    .races-list__date,
+    .races-list__details {
+      padding: 0.5em 0;
+      border-bottom: 1px solid var(--global-border-color);
+    }
+
+    .races-list__item:last-child > .races-list__date,
+    .races-list__item:last-child > .races-list__details {
+      border-bottom: 0;
+    }
+
+    .races-list__date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-right: 0.75em;
+      border-right: 1px solid var(--global-border-color);
+      line-height: 1.15;
+    }
+
+    .races-list__month,
+    .races-list__day {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .races-list__month {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+
+    .races-list__day {
+      font-size: 2.5em;
+    }
+
+    .races-list__details {
+      min-width: 0;
+      font-weight: bold;
+    }
+
+    .races-list__type,
+    .races-list__location {
+      display: block;
+      font-size: 0.75em;
+      opacity: 0.75;
     }
   </style>
 
   <section class="content-section">
     <h1><i class="fas fa-fw fa-tree" aria-hidden="true"></i>Outdoor Adventures</h2>
     <div class="adventures-intro">
-      <div class="adventures-intro__text">
+      <div class="adventures-intro__text" id="adventures-text">
         <p>
           I may claim to be a software engineer, but I do in fact touch quite a bit of grass. For proof I made
           this page to show off some of the cool places and activities I've done. Here you can find some of my
@@ -52,9 +122,37 @@ redirect_from:
           names of those places are. For now, enjoy the list of activities and upcoming races I'm participating in.
         </p>
       </div>
-      <div class="adventures-intro__calendar">
+      <div class="adventures-intro__calendar" id="adventures-calendar">
         <h3><i class="fas fa-fw fa-calendar-days" aria-hidden="true"></i>Upcoming Races &amp; Events</h3>
-        <p class="strava-panel__empty">Calendar coming soon.</p>
+        {% assign today = site.time | date: "%Y-%m-%d" %}
+        {% assign upcoming_races = site.data.races | where_exp: "r", "r.date >= today" | sort: "date" %}
+        {% if upcoming_races.size > 0 %}
+          <ul class="races-list">
+            {% for race in upcoming_races %}
+              <li class="races-list__item">
+                <div class="races-list__date">
+                  <span class="races-list__month">{{ race.date | date: "%b" }}</span>
+                  <span class="races-list__day">{{ race.date | date: "%-d" }}</span>
+                </div>
+                <div class="races-list__details">
+                  {% if race.url %}
+                    <a href="{{ race.url }}" target="_blank" rel="noopener noreferrer">{{ race.name }}</a>
+                  {% else %}
+                    <span class="races-list__name">{{ race.name }}</span>
+                  {% endif %}
+                  {% if race.type %}
+                    <span class="races-list__type">{{ race.type }}</span>
+                  {% endif %}
+                  {% if race.location %}
+                    <span class="races-list__location">{{ race.location }}</span>
+                  {% endif %}
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="strava-panel__empty">No upcoming races on the calendar right now.</p>
+        {% endif %}
       </div>
     </div>
   </section>
@@ -63,3 +161,23 @@ redirect_from:
 
   {% include strava-gear.html %}
 </div>
+
+<script>
+(function () {
+  var text = document.getElementById('adventures-text');
+  var calendar = document.getElementById('adventures-calendar');
+  if (!text || !calendar) { return; }
+
+  function matchHeight() {
+    calendar.style.maxHeight = '';
+    var sameRow = calendar.getBoundingClientRect().top === text.getBoundingClientRect().top;
+    if (sameRow) {
+      calendar.style.maxHeight = text.offsetHeight + 'px';
+    }
+  }
+
+  matchHeight();
+  window.addEventListener('resize', matchHeight);
+  window.addEventListener('load', matchHeight);
+})();
+</script>
