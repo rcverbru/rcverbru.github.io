@@ -1,5 +1,19 @@
 [
   {
+    "id": 19688829091,
+    "name": "Short climb",
+    "type": "RockClimbing",
+    "distance": 660.2,
+    "moving_time": 732,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-08-10T18:49:02Z",
+    "start_latlng": [
+      44.993702,
+      -93.27751
+    ],
+    "workout_type": 28
+  },
+  {
     "id": 19589402645,
     "name": "Runnin it back",
     "type": "Ride",
@@ -198,20 +212,5 @@
       -93.277596
     ],
     "workout_type": 28
-  },
-  {
-    "id": 19131624238,
-    "name": "How much rocks can a wood chuck chuck",
-    "type": "RockClimbing",
-    "distance": 847.1,
-    "moving_time": 1178,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-06-30T19:29:43Z",
-    "start_latlng": [
-      44.993554,
-      -93.277579
-    ],
-    "workout_type": 28,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/Ba-TtyZaW7JFlaMTR0gc41ZUXg7R-LKjb6eOWTrqaAE-192x256.jpg"
   }
 ]
