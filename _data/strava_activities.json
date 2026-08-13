@@ -1,5 +1,25 @@
 [
   {
+    "id": 19719549635,
+    "name": "Aquatic part 2",
+    "type": "Swim",
+    "distance": 700,
+    "moving_time": 756,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-08-12T19:40:16Z",
+    "start_latlng": []
+  },
+  {
+    "id": 19719369773,
+    "name": "We goin aquatic 🐟",
+    "type": "Swim",
+    "distance": 650,
+    "moving_time": 592,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-08-11T19:00:45Z",
+    "start_latlng": []
+  },
+  {
     "id": 19688829091,
     "name": "Short climb",
     "type": "RockClimbing",
@@ -184,33 +204,5 @@
     ],
     "workout_type": null,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/UhCYo6HewvT0M5LH9D-LjUuKFm8GIxGw006gZ5F-_zQ-192x256.jpg"
-  },
-  {
-    "id": 19248938488,
-    "name": "Purple pretty cool",
-    "type": "RockClimbing",
-    "distance": 1004.8,
-    "moving_time": 1102,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-07-09T16:27:21Z",
-    "start_latlng": [
-      44.993714,
-      -93.277507
-    ],
-    "workout_type": 28
-  },
-  {
-    "id": 19221561628,
-    "name": "Rocks are pretty cool",
-    "type": "RockClimbing",
-    "distance": 480.4,
-    "moving_time": 415,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-07-07T17:32:53Z",
-    "start_latlng": [
-      44.993579,
-      -93.277596
-    ],
-    "workout_type": 28
   }
 ]
