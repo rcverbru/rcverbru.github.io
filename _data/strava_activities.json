@@ -1,5 +1,19 @@
 [
   {
+    "id": 19809587852,
+    "name": "Prework shenanigans",
+    "type": "Ride",
+    "distance": 18419.3,
+    "moving_time": 4682,
+    "total_elevation_gain": 273.5,
+    "start_date_local": "2026-08-19T07:34:04Z",
+    "start_latlng": [
+      44.901483,
+      -93.426806
+    ],
+    "workout_type": null
+  },
+  {
     "id": 19801169697,
     "name": "Back to the grind",
     "type": "RockClimbing",
@@ -190,20 +204,5 @@
       -93.277742
     ],
     "workout_type": 28
-  },
-  {
-    "id": 19315886303,
-    "name": "Toasty outside = climb inside",
-    "type": "RockClimbing",
-    "distance": 762.4,
-    "moving_time": 654,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-07-14T16:44:44Z",
-    "start_latlng": [
-      44.993626,
-      -93.277606
-    ],
-    "workout_type": 28,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/XWyZzkKWNc8LDol9a-ANtabQXQsoyu6WaTwR1qvkslw-192x256.jpg"
   }
 ]
