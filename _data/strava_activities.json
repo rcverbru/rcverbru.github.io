@@ -1,5 +1,20 @@
 [
   {
+    "id": 19801169697,
+    "name": "Back to the grind",
+    "type": "RockClimbing",
+    "distance": 2746.4,
+    "moving_time": 2470,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-08-18T16:55:36Z",
+    "start_latlng": [
+      44.993681,
+      -93.277559
+    ],
+    "workout_type": 28,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/icDB4WAFoTOj1x3EiJzNw32ehH0c7Ezuy1Lc2kAhGfc-192x256.jpg"
+  },
+  {
     "id": 19756544509,
     "name": "Chasing a lack of deer",
     "type": "Ride",
@@ -190,19 +205,5 @@
     ],
     "workout_type": 28,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/XWyZzkKWNc8LDol9a-ANtabQXQsoyu6WaTwR1qvkslw-192x256.jpg"
-  },
-  {
-    "id": 19286555787,
-    "name": "Following mark and his compatriots",
-    "type": "Ride",
-    "distance": 14164.5,
-    "moving_time": 4477,
-    "total_elevation_gain": 235.2,
-    "start_date_local": "2026-07-12T13:35:09Z",
-    "start_latlng": [
-      47.115939,
-      -88.546372
-    ],
-    "workout_type": null
   }
 ]
