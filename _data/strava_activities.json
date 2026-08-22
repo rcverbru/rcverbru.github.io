@@ -1,5 +1,20 @@
 [
   {
+    "id": 19843695141,
+    "name": "Who needs clips? 😏",
+    "type": "Ride",
+    "distance": 13850.7,
+    "moving_time": 4429,
+    "total_elevation_gain": 203.8,
+    "start_date_local": "2026-08-21T17:39:46Z",
+    "start_latlng": [
+      44.781718,
+      -93.189558
+    ],
+    "workout_type": null,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/88Zb40iTDBUXni6AhaRGUAEDUacQ36dqNYFjOgQlJwc-192x256.jpg"
+  },
+  {
     "id": 19809587852,
     "name": "Prework shenanigans",
     "type": "Ride",
@@ -190,19 +205,5 @@
       -93.421181
     ],
     "workout_type": null
-  },
-  {
-    "id": 19343389303,
-    "name": "Successful crimpies",
-    "type": "RockClimbing",
-    "distance": 524.1,
-    "moving_time": 506,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-07-16T17:44:38Z",
-    "start_latlng": [
-      44.993633,
-      -93.277742
-    ],
-    "workout_type": 28
   }
 ]
