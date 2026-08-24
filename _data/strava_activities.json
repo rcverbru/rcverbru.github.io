@@ -1,5 +1,19 @@
 [
   {
+    "id": 19871208972,
+    "name": "Its way too hot",
+    "type": "Run",
+    "distance": 6453.1,
+    "moving_time": 2758,
+    "total_elevation_gain": 33.7,
+    "start_date_local": "2026-08-23T16:08:21Z",
+    "start_latlng": [
+      44.843327,
+      -93.421272
+    ],
+    "workout_type": null
+  },
+  {
     "id": 19843695141,
     "name": "Who needs clips? 😏",
     "type": "Ride",
@@ -191,19 +205,5 @@
       -93.277583
     ],
     "workout_type": 28
-  },
-  {
-    "id": 19411459548,
-    "name": "I think someone was playing Tokyo drift in the background 🤔",
-    "type": "Ride",
-    "distance": 29202.5,
-    "moving_time": 6773,
-    "total_elevation_gain": 392.2,
-    "start_date_local": "2026-07-21T18:06:41Z",
-    "start_latlng": [
-      44.843314,
-      -93.421181
-    ],
-    "workout_type": null
   }
 ]
