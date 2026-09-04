@@ -1,5 +1,16 @@
 [
   {
+    "id": 20027440212,
+    "name": "My hands be gettin roughed up",
+    "type": "RockClimbing",
+    "distance": 667.7,
+    "moving_time": 3301,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-09-03T17:57:02Z",
+    "start_latlng": [],
+    "workout_type": 28
+  },
+  {
     "id": 20012888692,
     "name": "Short climb",
     "type": "RockClimbing",
@@ -190,19 +201,5 @@
     "start_latlng": [],
     "workout_type": 28,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/S1gORTzVw9Ra3-qowAWcfo58i7J6yGHXnysxPlupzn8-256x245.jpg"
-  },
-  {
-    "id": 19508269962,
-    "name": "3 dudes 1 climb",
-    "type": "RockClimbing",
-    "distance": 752.2,
-    "moving_time": 681,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-07-28T18:19:20Z",
-    "start_latlng": [
-      44.993529,
-      -93.277533
-    ],
-    "workout_type": 28
   }
 ]
