@@ -1,0 +1,39 @@
+' generate png file using:
+' java -jar plantuml.jar bat_pipeline.puml
+' just update plantuml.jar with actual location
+
+@startuml
+
+package "Data Collection" as DC {
+  [Bag Data] as BD
+  [Bag2Image Converter] as B2I
+  [MeanSquared Downsampling] as MSD
+  package "To be built" #Red {
+    [Recorded Video] as RV
+    [ROS Live Feed] as RLF
+    [Video2Image Converter] as V2I
+  }
+}
+
+package "Image Preprocessors" as IP {
+  [Colorizer] as CP
+  [Denoiser] as DP
+  [Gain] as GP
+  [Offset] as OP
+  [Narcissus] as NP
+  [Normalizer] as NMP
+}
+
+package "Detectors" as D {
+  [SAM1] as SAM
+}
+
+BD --> B2I
+RV --> V2I
+B2I --> MSD
+V2I --> MSD
+RLF --> IP
+MSD --> IP
+IP --> D
+
+@enduml 

@@ -1,45 +1,133 @@
 ---
+layout: archive
+title: "Bat Detection and Tracking Research"
 permalink: /research/bats/
-title: "Projects"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /bats
   - /bats.html
 ---
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+{% include base_path %}
 
-<div id="mine-map" style="height: 500px; margin-bottom: 1.5em;"></div>
+<div class="profile-page">
+  <section class="content-section">
+    <h1><span aria-hidden="true" style="display: inline-block; height: 1em; width: 1em; vertical-align: -0.1em; margin-right: 0.3em; background-color: currentColor; -webkit-mask: url('{{ base_path }}/images/bat.png') center / contain no-repeat; mask: url('{{ base_path }}/images/bat.png') center / contain no-repeat;"></span>Bat Detection and Tracking Research</h1>
+    <style>
+      .bats-intro-row {
+        display: flex;
+        gap: 2em;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script>
-  var mineLocations = {{ site.data.mine_locations | jsonify }};
+      .bats-intro-text {
+        flex: 1 1 320px;
+      }
 
-  var mineMap = L.map('mine-map').setView([47.1211, -88.5464], 7);
+      .bats-intro-map {
+        flex: 1 1 320px;
+        min-width: 0;
+      }
+    </style>
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(mineMap);
+    <div class="bats-intro-row">
+      <div class="bats-intro-text">
+        <p>
+          This project develops low-disturbance imaging and detection methods for monitoring hibernating bat
+          populations in the abandoned mines of the Houghton, Michigan area. Using near-infrared and long-wave
+          infrared (LWIR) cameras, the goal is to locate, count, and track bats without disturbing them during
+          hibernation. We aim to build an automated pipeline for turning that imagery into reliable population data
+          so that current methods of hand counting can be retired for current DNR Researchers. This work is being 
+          done through the <a href="{{ base_path }}/research/">Robust Autonomous Systems Lab (RASL)</a> at Michigan Tech.
+        </p>
+        <p>
+          This project is in association with Carl Greene, Breanna R. Gusick, and the Michigan DNR.
+        </p>
+      </div>
+      <div class="bats-intro-map">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-  var markerStyles = {
-    collected: { radius: 8, weight: 2, color: '#1e8449', fillColor: '#2ecc71', fillOpacity: 0.9 },
-    default: { radius: 8, weight: 2, color: '#1f6feb', fillColor: '#4a90e2', fillOpacity: 0.9 }
-  };
+        <div id="mine-map" style="height: 400px;"></div>
 
-  var mineBounds = [];
-  mineLocations.forEach(function (loc) {
-    var style = loc.data_collected ? markerStyles.collected : markerStyles.default;
-    var marker = L.circleMarker([loc.lat, loc.lng], style).addTo(mineMap);
-    if (loc.name || loc.description) {
-      marker.bindPopup('<strong>' + (loc.name || '') + '</strong>' + (loc.description ? '<br>' + loc.description : ''));
-    }
-    mineBounds.push([loc.lat, loc.lng]);
-  });
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script>
+          var mineLocations = {{ site.data.mine_locations | jsonify }};
 
-  if (mineBounds.length > 1) {
-    mineMap.fitBounds(mineBounds, { padding: [30, 30] });
-  }
-</script>
+          var mineMap = L.map('mine-map').setView([47.1211, -88.5464], 7);
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(mineMap);
+
+          var markerStyles = {
+            collected: { radius: 8, weight: 2, color: '#1e8449', fillColor: '#2ecc71', fillOpacity: 0.9 },
+            default: { radius: 8, weight: 2, color: '#1f6feb', fillColor: '#4a90e2', fillOpacity: 0.9 }
+          };
+
+          var mineBounds = [];
+          mineLocations.forEach(function (loc) {
+            var style = loc.data_collected ? markerStyles.collected : markerStyles.default;
+            var marker = L.circleMarker([loc.lat, loc.lng], style).addTo(mineMap);
+            if (loc.name || loc.description) {
+              marker.bindPopup('<strong>' + (loc.name || '') + '</strong>' + (loc.description ? '<br>' + loc.description : ''));
+            }
+            mineBounds.push([loc.lat, loc.lng]);
+          });
+
+          if (mineBounds.length > 1) {
+            mineMap.fitBounds(mineBounds, { padding: [30, 30] });
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-file-lines" aria-hidden="true"></i>Publications</h2>
+
+    <div class="subgroup">
+      <h3>Paper 1</h3>
+      <p>Low-Disturbance LWIR Imaging and Unsupervised Clustering for Detecting Hibernating Bats in Subterranean Mines</p>
+      <p><em>Soon to be published</em></p>
+    </div>
+
+    <div class="subgroup">
+      <h3>Paper 2</h3>
+      <p>TBD</p>
+    </div>
+
+    <div class="subgroup">
+      <h3>Paper 3</h3>
+      <p>TBD</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <h2><i class="fas fa-fw fa-images" aria-hidden="true"></i>Field Imagery</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="{{ base_path }}/images/bats/long_eared1.jpg" alt="Long-eared bat, visible light">
+        <div class="card-caption">Long-eared bat</div>
+      </div>
+      <div class="card">
+        <img src="{{ base_path }}/images/bats/near_IR_cluster_small.png" alt="Cluster of hibernating bats in near-infrared">
+        <div class="card-caption">Hibernating cluster (near-IR)</div>
+      </div>
+      <div class="card">
+        <img src="{{ base_path }}/images/bats/long_wave_flying.png" alt="Bat in flight captured on long-wave infrared">
+        <div class="card-caption">Small Brown Bat in Flight (LWIR)</div>
+      </div>
+      <div class="card">
+        <img src="{{ base_path }}/images/bats/near_ir_couple.png" alt="Pair of bats roosting in near-infrared">
+        <div class="card-caption">Roosting pair (near-IR)</div>
+      </div>
+      <div class="card">
+        <img src="{{ base_path }}/images/bats/boson-1734116079139180414-dbscan.png" alt="Pipeline output from paper 1 data processing">
+        <div class="card-caption">Paper 1 Pipeline detections using DBScan</div>
+      </div>
+    </div>
+  </section>
+</div>
+
