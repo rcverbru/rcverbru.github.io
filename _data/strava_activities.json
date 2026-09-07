@@ -1,5 +1,46 @@
 [
   {
+    "id": 20067909879,
+    "name": "Meandering",
+    "type": "Walk",
+    "distance": 3996,
+    "moving_time": 2741,
+    "total_elevation_gain": 31,
+    "start_date_local": "2026-09-06T19:17:16Z",
+    "start_latlng": [
+      47.120958,
+      -88.57727
+    ]
+  },
+  {
+    "id": 20066290562,
+    "name": "You can consider me hungary",
+    "type": "Hike",
+    "distance": 2634.7,
+    "moving_time": 2357,
+    "total_elevation_gain": 76,
+    "start_date_local": "2026-09-06T14:55:34Z",
+    "start_latlng": [
+      47.172951,
+      -88.444363
+    ],
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/J74x43ubvfmw8LJerl1bwISvTwYJ-qZFlqd1Zc2o95I-192x256.jpg"
+  },
+  {
+    "id": 20065571128,
+    "name": "Explorin a cave",
+    "type": "Hike",
+    "distance": 2579,
+    "moving_time": 2399,
+    "total_elevation_gain": 82,
+    "start_date_local": "2026-09-06T13:32:25Z",
+    "start_latlng": [
+      47.206707,
+      -88.430727
+    ],
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/T_CP8CTyl0WwSll2ZW1uOYrVaNA-b2r3MUE_ukL5NF0-256x192.jpg"
+  },
+  {
     "id": 20051268356,
     "name": "Chillin",
     "type": "Walk",
@@ -158,50 +199,5 @@
       -93.27751
     ],
     "workout_type": 28
-  },
-  {
-    "id": 19589402645,
-    "name": "Runnin it back",
-    "type": "Ride",
-    "distance": 13567.9,
-    "moving_time": 5779,
-    "total_elevation_gain": 238,
-    "start_date_local": "2026-08-03T12:25:37Z",
-    "start_latlng": [
-      47.466804,
-      -87.888272
-    ],
-    "workout_type": null,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/dc819MJaznk3Z6UZjberQZK3o2j2aHfgk6C3OXtjFpw-192x256.jpg"
-  },
-  {
-    "id": 19575997873,
-    "name": "Kicking logan out of town",
-    "type": "Ride",
-    "distance": 10983.7,
-    "moving_time": 3625,
-    "total_elevation_gain": 191,
-    "start_date_local": "2026-08-02T15:17:21Z",
-    "start_latlng": [
-      47.107898,
-      -88.552247
-    ],
-    "workout_type": null,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/a0tNw10UySJjIkw_Xw7MB1vREFwclurYS-OYcfGvCYA-256x192.jpg"
-  },
-  {
-    "id": 19562469271,
-    "name": "Easting at the bluffet 😋",
-    "type": "Ride",
-    "distance": 40736.5,
-    "moving_time": 14475,
-    "total_elevation_gain": 1274.7,
-    "start_date_local": "2026-08-01T08:06:52Z",
-    "start_latlng": [
-      47.459616,
-      -87.813337
-    ],
-    "workout_type": 11,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/6cxDHqdmiCchKMMFJj1sNByfJdcStV8yprRvkHio-yE-192x256.jpg"
   }
 ]
