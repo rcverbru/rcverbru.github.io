@@ -1,5 +1,19 @@
 [
   {
+    "id": 20123750674,
+    "name": "Short climb so I can find food",
+    "type": "RockClimbing",
+    "distance": 285.4,
+    "moving_time": 222,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-09-10T18:19:16Z",
+    "start_latlng": [
+      44.993584,
+      -93.277646
+    ],
+    "workout_type": 28
+  },
+  {
     "id": 20080332057,
     "name": "Post bike ice cream adventure",
     "type": "Walk",
@@ -192,15 +206,5 @@
     ],
     "workout_type": 11,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/mrWVPJDaOIQGO5X8Mb6R-2PFGhxNALPDTqGrprsYM8s-192x256.jpg"
-  },
-  {
-    "id": 19719549635,
-    "name": "Aquatic part 2",
-    "type": "Swim",
-    "distance": 700,
-    "moving_time": 756,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-08-12T19:40:16Z",
-    "start_latlng": []
   }
 ]
