@@ -1,5 +1,20 @@
 [
   {
+    "id": 20151393629,
+    "name": "They BOBOTIZED the LAWN!?!?",
+    "type": "Ride",
+    "distance": 19818.1,
+    "moving_time": 4371,
+    "total_elevation_gain": 224.2,
+    "start_date_local": "2026-09-12T18:52:40Z",
+    "start_latlng": [
+      44.84319,
+      -93.421191
+    ],
+    "workout_type": null,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/y0LVii9DBEOvCmYu_bD6j1gBw3dCxksRvvbax5l5uEU-192x256.jpg"
+  },
+  {
     "id": 20123750674,
     "name": "Short climb so I can find food",
     "type": "RockClimbing",
@@ -191,20 +206,5 @@
     ],
     "workout_type": 28,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/icDB4WAFoTOj1x3EiJzNw32ehH0c7Ezuy1Lc2kAhGfc-192x256.jpg"
-  },
-  {
-    "id": 19756544509,
-    "name": "Chasing a lack of deer",
-    "type": "Ride",
-    "distance": 37135.3,
-    "moving_time": 11711,
-    "total_elevation_gain": 356.1,
-    "start_date_local": "2026-08-15T10:45:53Z",
-    "start_latlng": [
-      47.241644,
-      -88.461527
-    ],
-    "workout_type": 11,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/mrWVPJDaOIQGO5X8Mb6R-2PFGhxNALPDTqGrprsYM8s-192x256.jpg"
   }
 ]
