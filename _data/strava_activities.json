@@ -1,5 +1,16 @@
 [
   {
+    "id": 20220757315,
+    "name": "Limit testing with Mitchell",
+    "type": "RockClimbing",
+    "distance": 740.3,
+    "moving_time": 3189,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-09-17T18:56:28Z",
+    "start_latlng": [],
+    "workout_type": 28
+  },
+  {
     "id": 20151393629,
     "name": "They BOBOTIZED the LAWN!?!?",
     "type": "Ride",
@@ -191,20 +202,5 @@
       -93.426806
     ],
     "workout_type": null
-  },
-  {
-    "id": 19801169697,
-    "name": "Back to the grind",
-    "type": "RockClimbing",
-    "distance": 2746.4,
-    "moving_time": 2470,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-08-18T16:55:36Z",
-    "start_latlng": [
-      44.993681,
-      -93.277559
-    ],
-    "workout_type": 28,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/icDB4WAFoTOj1x3EiJzNw32ehH0c7Ezuy1Lc2kAhGfc-192x256.jpg"
   }
 ]
