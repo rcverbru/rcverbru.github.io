@@ -1,5 +1,33 @@
 [
   {
+    "id": 20248458672,
+    "name": "Just a small and quick hike 😏",
+    "type": "Hike",
+    "distance": 7554.8,
+    "moving_time": 6889,
+    "total_elevation_gain": 288,
+    "start_date_local": "2026-09-19T15:37:37Z",
+    "start_latlng": [
+      47.394458,
+      -87.921273
+    ],
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/UO5RNxIf_L0k30PF9tK_g3yPZSFYkERdRsKVGjjG0gI-192x256.jpg"
+  },
+  {
+    "id": 20245239171,
+    "name": "Going batty",
+    "type": "Hike",
+    "distance": 1047.9,
+    "moving_time": 1237,
+    "total_elevation_gain": 20,
+    "start_date_local": "2026-09-19T14:28:42Z",
+    "start_latlng": [
+      47.424506,
+      -88.098718
+    ],
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/gkv08sy2DgyH2gT8OnjX_DMNX8hLMyAQ_ZLdHqYHPWU-192x256.jpg"
+  },
+  {
     "id": 20220757315,
     "name": "Limit testing with Mitchell",
     "type": "RockClimbing",
@@ -171,35 +199,6 @@
     "start_latlng": [
       44.843327,
       -93.421272
-    ],
-    "workout_type": null
-  },
-  {
-    "id": 19843695141,
-    "name": "Who needs clips? 😏",
-    "type": "Ride",
-    "distance": 13850.7,
-    "moving_time": 4429,
-    "total_elevation_gain": 203.8,
-    "start_date_local": "2026-08-21T17:39:46Z",
-    "start_latlng": [
-      44.781718,
-      -93.189558
-    ],
-    "workout_type": null,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/88Zb40iTDBUXni6AhaRGUAEDUacQ36dqNYFjOgQlJwc-192x256.jpg"
-  },
-  {
-    "id": 19809587852,
-    "name": "Prework shenanigans",
-    "type": "Ride",
-    "distance": 18419.3,
-    "moving_time": 4682,
-    "total_elevation_gain": 273.5,
-    "start_date_local": "2026-08-19T07:34:04Z",
-    "start_latlng": [
-      44.901483,
-      -93.426806
     ],
     "workout_type": null
   }
