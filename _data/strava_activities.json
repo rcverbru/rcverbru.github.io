@@ -1,5 +1,16 @@
 [
   {
+    "id": 20313679985,
+    "name": "We do be climbin again",
+    "type": "RockClimbing",
+    "distance": 721.4,
+    "moving_time": 3599,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-09-22T19:07:36Z",
+    "start_latlng": [],
+    "workout_type": 28
+  },
+  {
     "id": 20248458672,
     "name": "Just a small and quick hike 😏",
     "type": "Hike",
@@ -185,20 +196,6 @@
     "start_latlng": [
       44.843256,
       -93.420929
-    ],
-    "workout_type": null
-  },
-  {
-    "id": 19871208972,
-    "name": "Its way too hot",
-    "type": "Run",
-    "distance": 6453.1,
-    "moving_time": 2758,
-    "total_elevation_gain": 33.7,
-    "start_date_local": "2026-08-23T16:08:21Z",
-    "start_latlng": [
-      44.843327,
-      -93.421272
     ],
     "workout_type": null
   }
