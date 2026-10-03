@@ -1,5 +1,20 @@
 [
   {
+    "id": 20424886201,
+    "name": "Lazy lil run",
+    "type": "Run",
+    "distance": 6089.4,
+    "moving_time": 2390,
+    "total_elevation_gain": 57.3,
+    "start_date_local": "2026-10-02T15:50:05Z",
+    "start_latlng": [
+      44.843025,
+      -93.421293
+    ],
+    "workout_type": null,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/iRswfiLTTXdHoKqBnKp5s7OEap5yQRsWGJujckUFWGI-192x256.jpg"
+  },
+  {
     "id": 20412620434,
     "name": "Cookin the hands 🔥",
     "type": "RockClimbing",
@@ -189,19 +204,5 @@
       -88.430727
     ],
     "photo": "https://dgtzuqphqg23d.cloudfront.net/T_CP8CTyl0WwSll2ZW1uOYrVaNA-b2r3MUE_ukL5NF0-256x192.jpg"
-  },
-  {
-    "id": 20051268356,
-    "name": "Chillin",
-    "type": "Walk",
-    "distance": 4465.2,
-    "moving_time": 3271,
-    "total_elevation_gain": 28.5,
-    "start_date_local": "2026-09-05T13:01:50Z",
-    "start_latlng": [
-      47.121029,
-      -88.577713
-    ],
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/YIu4vUeQ3I-_3JaxI6KJFPASzPgTHXE_LAKsR9DYsBM-192x256.jpg"
   }
 ]
