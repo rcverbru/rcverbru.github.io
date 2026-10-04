@@ -1,5 +1,19 @@
 [
   {
+    "id": 20439273795,
+    "name": "Weather couldn't decide what it was doin",
+    "type": "RockClimbing",
+    "distance": 383.6,
+    "moving_time": 420,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-10-03T16:11:08Z",
+    "start_latlng": [
+      44.993535,
+      -93.27756
+    ],
+    "workout_type": 28
+  },
+  {
     "id": 20424886201,
     "name": "Lazy lil run",
     "type": "Run",
@@ -190,19 +204,5 @@
       -88.444363
     ],
     "photo": "https://dgtzuqphqg23d.cloudfront.net/J74x43ubvfmw8LJerl1bwISvTwYJ-qZFlqd1Zc2o95I-192x256.jpg"
-  },
-  {
-    "id": 20065571128,
-    "name": "Explorin a cave",
-    "type": "Hike",
-    "distance": 2579,
-    "moving_time": 2399,
-    "total_elevation_gain": 82,
-    "start_date_local": "2026-09-06T13:32:25Z",
-    "start_latlng": [
-      47.206707,
-      -88.430727
-    ],
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/T_CP8CTyl0WwSll2ZW1uOYrVaNA-b2r3MUE_ukL5NF0-256x192.jpg"
   }
 ]
