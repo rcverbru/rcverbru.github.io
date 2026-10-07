@@ -1,5 +1,19 @@
 [
   {
+    "id": 20481833834,
+    "name": "Short climb time",
+    "type": "RockClimbing",
+    "distance": 227,
+    "moving_time": 279,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-10-06T17:48:10Z",
+    "start_latlng": [
+      44.99358,
+      -93.277624
+    ],
+    "workout_type": 28
+  },
+  {
     "id": 20453690019,
     "name": "Limit testing",
     "type": "Ride",
@@ -192,18 +206,5 @@
       -88.577603
     ],
     "workout_type": null
-  },
-  {
-    "id": 20067909879,
-    "name": "Meandering",
-    "type": "Walk",
-    "distance": 3996,
-    "moving_time": 2741,
-    "total_elevation_gain": 31,
-    "start_date_local": "2026-09-06T19:17:16Z",
-    "start_latlng": [
-      47.120958,
-      -88.57727
-    ]
   }
 ]
