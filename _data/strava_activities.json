@@ -1,5 +1,16 @@
 [
   {
+    "id": 20574062858,
+    "name": "Afternoon Activity",
+    "type": "RockClimbing",
+    "distance": 590,
+    "moving_time": 3058,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-10-13T17:15:39Z",
+    "start_latlng": [],
+    "workout_type": 28
+  },
+  {
     "id": 20548480452,
     "name": "Gotta make sure to walk the isabel",
     "type": "Walk",
@@ -190,19 +201,5 @@
     ],
     "workout_type": null,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/y0LVii9DBEOvCmYu_bD6j1gBw3dCxksRvvbax5l5uEU-192x256.jpg"
-  },
-  {
-    "id": 20123750674,
-    "name": "Short climb so I can find food",
-    "type": "RockClimbing",
-    "distance": 285.4,
-    "moving_time": 222,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-09-10T18:19:16Z",
-    "start_latlng": [
-      44.993584,
-      -93.277646
-    ],
-    "workout_type": 28
   }
 ]
