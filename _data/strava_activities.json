@@ -1,14 +1,15 @@
 [
   {
     "id": 20574062858,
-    "name": "Afternoon Activity",
+    "name": "Doing things",
     "type": "RockClimbing",
     "distance": 590,
     "moving_time": 3058,
     "total_elevation_gain": 0,
     "start_date_local": "2026-10-13T17:15:39Z",
     "start_latlng": [],
-    "workout_type": 28
+    "workout_type": 28,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/WGTXKQYZS_saVGy_Gp31SVBlGYmh1PThVPyI6J2c1Vs-192x256.jpg"
   },
   {
     "id": 20548480452,
