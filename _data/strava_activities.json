@@ -1,5 +1,20 @@
 [
   {
+    "id": 20601844462,
+    "name": "Climbing the pockets 😎",
+    "type": "RockClimbing",
+    "distance": 359,
+    "moving_time": 368,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-10-15T16:53:23Z",
+    "start_latlng": [
+      44.99356,
+      -93.277625
+    ],
+    "workout_type": 28,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/Kj7bOQWSG40RWwQ5M8dBCSVQPY96AWyLnKcxyH8kf5A-192x256.jpg"
+  },
+  {
     "id": 20574062858,
     "name": "Doing things",
     "type": "RockClimbing",
@@ -187,20 +202,5 @@
     "start_date_local": "2026-09-17T18:56:28Z",
     "start_latlng": [],
     "workout_type": 28
-  },
-  {
-    "id": 20151393629,
-    "name": "They BOBOTIZED the LAWN!?!?",
-    "type": "Ride",
-    "distance": 19818.1,
-    "moving_time": 4371,
-    "total_elevation_gain": 224.2,
-    "start_date_local": "2026-09-12T18:52:40Z",
-    "start_latlng": [
-      44.84319,
-      -93.421191
-    ],
-    "workout_type": null,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/y0LVii9DBEOvCmYu_bD6j1gBw3dCxksRvvbax5l5uEU-192x256.jpg"
   }
 ]
