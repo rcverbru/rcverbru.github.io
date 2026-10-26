@@ -1,5 +1,18 @@
 [
   {
+    "id": 20732052839,
+    "name": "Evening Walk",
+    "type": "Walk",
+    "distance": 4608.3,
+    "moving_time": 3244,
+    "total_elevation_gain": 54,
+    "start_date_local": "2026-10-25T18:57:36Z",
+    "start_latlng": [
+      47.120277,
+      -88.579274
+    ]
+  },
+  {
     "id": 20667690557,
     "name": "Rolled a nat 20 on Intelligence",
     "type": "RockClimbing",
@@ -188,19 +201,5 @@
     "start_date_local": "2026-09-22T19:07:36Z",
     "start_latlng": [],
     "workout_type": 28
-  },
-  {
-    "id": 20248458672,
-    "name": "Just a small and quick hike 😏",
-    "type": "Hike",
-    "distance": 7554.8,
-    "moving_time": 6889,
-    "total_elevation_gain": 288,
-    "start_date_local": "2026-09-19T15:37:37Z",
-    "start_latlng": [
-      47.394458,
-      -87.921273
-    ],
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/UO5RNxIf_L0k30PF9tK_g3yPZSFYkERdRsKVGjjG0gI-192x256.jpg"
   }
 ]
