@@ -1,5 +1,17 @@
 [
   {
+    "id": 20967205736,
+    "name": "Mark is starting his mountain goat training arc",
+    "type": "RockClimbing",
+    "distance": 1405.1,
+    "moving_time": 6884,
+    "total_elevation_gain": 0,
+    "start_date_local": "2026-11-12T18:49:38Z",
+    "start_latlng": [],
+    "workout_type": 28,
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/E0_I5QfOpxkxcqfW6L9Xj0Goq0AvC1osmvdMVkNKxwI-192x256.jpg"
+  },
+  {
     "id": 20941098794,
     "name": "My project is gonna be reset next week :(",
     "type": "RockClimbing",
@@ -182,19 +194,5 @@
     ],
     "workout_type": null,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/yo_dgoZx21fnb9Oz3h_pORNAi9sWZpEpQzd1M3iCtY0-256x192.jpg"
-  },
-  {
-    "id": 20439273795,
-    "name": "Weather couldn't decide what it was doin",
-    "type": "RockClimbing",
-    "distance": 383.6,
-    "moving_time": 420,
-    "total_elevation_gain": 0,
-    "start_date_local": "2026-10-03T16:11:08Z",
-    "start_latlng": [
-      44.993535,
-      -93.27756
-    ],
-    "workout_type": 28
   }
 ]
