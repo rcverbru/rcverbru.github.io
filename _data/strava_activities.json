@@ -1,5 +1,19 @@
 [
   {
+    "id": 20988965683,
+    "name": "Pondering lagoons",
+    "type": "Hike",
+    "distance": 8263,
+    "moving_time": 6556,
+    "total_elevation_gain": 106.5,
+    "start_date_local": "2026-11-14T12:20:40Z",
+    "start_latlng": [
+      47.318837,
+      -88.471709
+    ],
+    "photo": "https://dgtzuqphqg23d.cloudfront.net/ta8xvuCmmlnfPM1r6DRQkKERtpanqcvVOVGu43vivd4-256x192.jpg"
+  },
+  {
     "id": 20967205736,
     "name": "Mark is starting his mountain goat training arc",
     "type": "RockClimbing",
@@ -179,20 +193,5 @@
       -93.277624
     ],
     "workout_type": 28
-  },
-  {
-    "id": 20453690019,
-    "name": "Limit testing",
-    "type": "Ride",
-    "distance": 54365.6,
-    "moving_time": 12663,
-    "total_elevation_gain": 576.6,
-    "start_date_local": "2026-10-04T12:52:07Z",
-    "start_latlng": [
-      44.843238,
-      -93.421188
-    ],
-    "workout_type": null,
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/yo_dgoZx21fnb9Oz3h_pORNAi9sWZpEpQzd1M3iCtY0-256x192.jpg"
   }
 ]
