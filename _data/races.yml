@@ -31,10 +31,24 @@
   date: "2026-09-26"
   location: "Houghton, MI"
   url: "https://cycling.mtu.edu/events/color-tour/"
-  type: Gravel Race
+  type: Gravel/Road Race
 - name: "Keweenaw Color Run"
   date: "2026-10-03"
   location: "Houghton, MI"
   url: "https://circleupkeweenaw.org/color-run"
   type: 5k Race
-
+- name: "UP Health Turkey Trot"
+  date: "2026-11-26"
+  location: "Hancock, MI"
+  url: "https://www.eventbrite.com/e/turkey-trot-2026-tickets-2003019562431"
+  type: 5k Race
+- name: "XTERRA Quebec"
+  date: "2027-07-10"
+  location: "Manoir Du Lac Delage, Canada"
+  url: "https://www.xterraplanet.com/event/xterra-quebec"
+  type: Off Road Triathlon
+- name: "XTERRA Quebec"
+  date: "2027-08-28"
+  location: "Thunderbay, Canada"
+  url: "https://www.xterraplanet.com/event/xterra-sleeping-giant"
+  type: Off Road Triathlon
