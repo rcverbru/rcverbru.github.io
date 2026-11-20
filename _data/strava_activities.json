@@ -1,5 +1,19 @@
 [
   {
+    "id": 21054521493,
+    "name": "🤷‍♂️ Why not...",
+    "type": "Run",
+    "distance": 5553.4,
+    "moving_time": 2300,
+    "total_elevation_gain": 46.8,
+    "start_date_local": "2026-11-19T21:46:54Z",
+    "start_latlng": [
+      44.84329,
+      -93.421246
+    ],
+    "workout_type": null
+  },
+  {
     "id": 21028490315,
     "name": "Left alone to my own climbs :(",
     "type": "RockClimbing",
@@ -183,19 +197,5 @@
     "start_latlng": [],
     "workout_type": 28,
     "photo": "https://dgtzuqphqg23d.cloudfront.net/WGTXKQYZS_saVGy_Gp31SVBlGYmh1PThVPyI6J2c1Vs-192x256.jpg"
-  },
-  {
-    "id": 20548480452,
-    "name": "Gotta make sure to walk the isabel",
-    "type": "Walk",
-    "distance": 4021.6,
-    "moving_time": 2837,
-    "total_elevation_gain": 38,
-    "start_date_local": "2026-10-11T19:52:48Z",
-    "start_latlng": [
-      47.120339,
-      -88.577919
-    ],
-    "photo": "https://dgtzuqphqg23d.cloudfront.net/I93MryycQdkH7I3Nr_WKkQKuZpYvw4z4WBWU90NonRg-192x256.jpg"
   }
 ]
